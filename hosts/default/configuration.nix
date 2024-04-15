@@ -186,6 +186,7 @@
     slurp
     libnotify
     yazi
+    vitetris
   ];
 
   xdg.portal = {
