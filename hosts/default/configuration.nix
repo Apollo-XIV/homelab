@@ -185,6 +185,7 @@
     jq
     slurp
     libnotify
+    yazi
   ];
 
   xdg.portal = {
