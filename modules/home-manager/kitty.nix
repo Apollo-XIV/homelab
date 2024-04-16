@@ -6,7 +6,7 @@
     environment = {
       "EDITOR" = "hx";
     };
-    font.name = "Fira Code";
+    font.name = "FiraCode Nerd Font";
     font.package = pkgs.fira-code-nerdfont;
     shellIntegration.enableZshIntegration = true;
     theme = "Aquarium Dark";
