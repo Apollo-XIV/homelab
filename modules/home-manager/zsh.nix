@@ -23,6 +23,8 @@
       tree = "eza --tree --icons --group-directories-first";
       ls = "eza -ahl --icons --group-directories-first";
       cat = "bat";
+      zj = "zellij";
+      zj-ide = "zellij --layout ~/.config/zellij/layouts/ide.kdl"
     };
 
     syntaxHighlighting = {
