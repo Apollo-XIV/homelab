@@ -25,6 +25,8 @@
       cat = "bat";
       zj = "zellij";
       zj-ide = "zellij --layout ~/.config/zellij/layouts/ide.kdl";
+      py = "python3";
+      tf = "terraform";
     };
 
     syntaxHighlighting = {
