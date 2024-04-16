@@ -188,6 +188,7 @@
     libnotify
     yazi
     vitetris
+    btop
   ];
 
   xdg.portal = {
