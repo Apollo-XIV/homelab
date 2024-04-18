@@ -189,6 +189,7 @@
     yazi
     vitetris
     btop
+    cozy
   ];
 
   xdg.portal = {
