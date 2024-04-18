@@ -190,6 +190,7 @@
     vitetris
     btop
     cozy
+    musikcube
   ];
 
   xdg.portal = {
