@@ -193,6 +193,7 @@
     cozy
     musikcube
     nh
+    lutris
   ];
 
   xdg.portal = {
