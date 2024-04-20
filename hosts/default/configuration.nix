@@ -18,22 +18,22 @@
   programs.zsh.enable = true;
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-    hardware.opengl = {
-      enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
-    };
-    services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+  services.xserver.videoDrivers = [ "nvidia" ];
     
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = true;
     nvidiaSettings = true;
+    nvidiaPersistenced = true;
     open = false;
     powerManagement.finegrained = false; 
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
-  nvidiaPersistenced = true;
 
   fonts.packages = with pkgs; [
     fira-code
