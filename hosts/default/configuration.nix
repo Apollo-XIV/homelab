@@ -191,6 +191,7 @@
     btop
     cozy
     musikcube
+    nh
   ];
 
   xdg.portal = {
