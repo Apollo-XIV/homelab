@@ -33,6 +33,7 @@
     powerManagement.finegrained = false; 
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  nvidiaPersistenced = true;
 
   fonts.packages = with pkgs; [
     fira-code
