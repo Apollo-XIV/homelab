@@ -188,6 +188,7 @@
     slurp
     libnotify
     yazi
+    lynx
     vitetris
     btop
     cozy
