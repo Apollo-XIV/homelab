@@ -23,7 +23,7 @@
     driSupport = true;
     driSupport32Bit = true;
   };
-  services.xserver.videoDrivers = [ "nvidiaBeta" ];
+  services.xserver.videoDrivers = [ "nvidia" ];
     
   hardware.nvidia = {
     modesetting.enable = true;
@@ -32,7 +32,7 @@
     nvidiaPersistenced = true;
     open = false;
     powerManagement.finegrained = false; 
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   fonts.packages = with pkgs; [
