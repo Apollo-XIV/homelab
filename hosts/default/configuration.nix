@@ -190,6 +190,7 @@
     yazi
     lynx
     vitetris
+    transmission
     btop
     cozy
     musikcube
