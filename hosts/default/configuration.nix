@@ -196,6 +196,7 @@
     musikcube
     nh
     lutris
+    pavucontrol
   ];
 
   xdg.portal = {
