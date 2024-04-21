@@ -197,6 +197,7 @@
     nh
     lutris
     pavucontrol
+    pulseaudio
   ];
 
   xdg.portal = {
