@@ -198,6 +198,7 @@
     lutris
     pavucontrol
     pulseaudio
+    playerctl
   ];
 
   xdg.portal = {
