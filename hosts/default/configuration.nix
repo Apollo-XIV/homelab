@@ -199,6 +199,7 @@
     pavucontrol
     pulseaudio
     playerctl
+    transmission
   ];
 
   xdg.portal = {
