@@ -200,6 +200,10 @@
     pulseaudio
     playerctl
     transmission
+    coreutils
+    findutils
+    xdg-utils
+    sqlite
   ];
 
   xdg.portal = {
