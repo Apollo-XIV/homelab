@@ -207,6 +207,7 @@
     findutils
     xdg-utils
     sqlite
+    tailscale-systray
   ];
 
   xdg.portal = {
