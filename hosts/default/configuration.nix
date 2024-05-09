@@ -208,6 +208,7 @@
     xdg-utils
     sqlite
     tailscale-systray
+    awscli
   ];
 
   xdg.portal = {
