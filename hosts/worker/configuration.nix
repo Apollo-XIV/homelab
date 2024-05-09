@@ -179,6 +179,7 @@
     coreutils
     findutils
     xdg-utils
+    godot_4
   ];
 
   xdg.portal = {
