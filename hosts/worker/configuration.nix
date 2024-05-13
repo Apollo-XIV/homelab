@@ -181,7 +181,6 @@
     xdg-utils
     godot_4
     ollama
-    oterm
   ];
 
   xdg.portal = {

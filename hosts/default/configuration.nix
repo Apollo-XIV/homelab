@@ -209,6 +209,8 @@
     sqlite
     tailscale-systray
     awscli
+    godot_4
+    ollama
   ];
 
   xdg.portal = {
