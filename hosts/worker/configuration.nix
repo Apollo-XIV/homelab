@@ -180,6 +180,7 @@
     findutils
     xdg-utils
     godot_4
+    ollama
   ];
 
   xdg.portal = {
