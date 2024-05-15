@@ -212,6 +212,7 @@
     godot_4
     ollama
     vscode
+    jupyter-all
   ];
 
   xdg.portal = {
