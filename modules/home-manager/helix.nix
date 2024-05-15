@@ -14,6 +14,10 @@
         cursorline = true;
         cursorcolumn = true;
         file-picker.hidden = false;
+        indent-guides = {
+          render = true;
+          skip-levels = 1;
+        };
         cursor-shape = {
           insert = "bar";
           normal = "block";
