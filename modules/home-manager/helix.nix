@@ -17,7 +17,7 @@
         indent-guides = {
           render = true;
           character = "╎";
-          skip-levels = 0;
+          skip-levels = 1;
         };
         cursor-shape = {
           insert = "bar";
