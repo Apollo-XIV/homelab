@@ -16,6 +16,7 @@
         file-picker.hidden = false;
         indent-guides = {
           render = true;
+          character = "╎"
           skip-levels = 1;
         };
         cursor-shape = {
