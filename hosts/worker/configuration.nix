@@ -163,6 +163,8 @@
     python3
     python311Packages.pip
     python311Packages.python-lsp-server
+    python311Packages.ipykernel
+    python311Packages.notebook
     terraform
     wget
     grim
