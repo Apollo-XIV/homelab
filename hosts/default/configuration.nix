@@ -211,6 +211,7 @@
     awscli
     godot_4
     ollama
+    vscode
   ];
 
   xdg.portal = {
