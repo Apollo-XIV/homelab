@@ -216,6 +216,8 @@
     ollama
     vscode
     jupyter-all
+    unzip
+    reaper
   ];
 
   xdg.portal = {
