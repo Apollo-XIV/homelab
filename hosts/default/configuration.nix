@@ -180,6 +180,7 @@
     python311Packages.ipykernel
     python311Packages.jupyter-console
     python311Packages.notebook
+    python311Packages.qtconsole
     terraform
     terraform-ls
     spotify
@@ -216,6 +217,7 @@
     ollama
     vscode
     jupyter-all
+    vscode-extensions.mstoolsai.jupyter
     unzip
     reaper
   ];
