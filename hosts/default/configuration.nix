@@ -150,6 +150,7 @@
     EDITOR = "hx";
     NIXOS_OZONE_WL = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
+    # LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
   };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -220,6 +221,8 @@
     vscode-extensions.ms-toolsai.jupyter
     unzip
     reaper
+    gcc
+    libgcc
   ];
 
   xdg.portal = {
