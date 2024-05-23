@@ -217,7 +217,7 @@
     ollama
     vscode
     jupyter-all
-    vscode-extensions.mstoolsai.jupyter
+    vscode-extensions.ms-toolsai.jupyter
     unzip
     reaper
   ];
