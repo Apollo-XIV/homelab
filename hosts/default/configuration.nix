@@ -223,6 +223,8 @@
     reaper
     gcc
     libgcc
+    obs-studio
+    mpv
   ];
 
   xdg.portal = {
