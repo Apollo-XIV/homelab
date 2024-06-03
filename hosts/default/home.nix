@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, hyprland, ... }:
+{ config, pkgs, inputs, ... }:
 
 # let
 #   nur-pkgs = import (builtins.fetchTarball  {
@@ -62,6 +62,8 @@ in
     enable = true;
     settings = {}; # toml config file
   };
+
+  programs.hyprland.enable = true;
 
   programs.firefox = {
     enable = true;
