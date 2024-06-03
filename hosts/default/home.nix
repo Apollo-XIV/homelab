@@ -63,7 +63,6 @@ in
     settings = {}; # toml config file
   };
 
-  programs.hyprland.enable = true;
 
   programs.firefox = {
     enable = true;
