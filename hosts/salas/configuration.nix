@@ -16,7 +16,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   programs.zsh.enable = true;
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "salas"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   hardware.opengl = {
     enable = true;
@@ -78,10 +78,10 @@
     # layout = "gb";
     # xkbVariant = "";
   # };
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  # programs.hyprland = {
+  #   enable = true;
+  #   xwayland.enable = true;
+  # };
   security.polkit.enable = true;
   
 
@@ -95,14 +95,14 @@
   services.tailscale.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
+  # sound.enable = true;
+  # hardware.pulseaudio.enable = false;
+  # security.rtkit.enable = true;
+  # services.pipewire = {
+    # enable = true;
+    # alsa.enable = true;
+    # alsa.support32Bit = true;
+    # pulse.enable = true;
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
 
@@ -127,18 +127,18 @@
   #   };
   # };
 
-  services.xserver.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
+  # services.xserver.displayManager.sddm = {
+  #   enable = true;
+  #   wayland.enable = true;
     
-  };
-  services.xserver.enable = true;
+  # };
+  # services.xserver.enable = true;
 
 
   environment.sessionVariables = {
     EDITOR = "hx";
-    NIXOS_OZONE_WL = "1";
-    WLR_NO_HARDWARE_CURSORS = "1";
+    # NIXOS_OZONE_WL = "1";
+    # WLR_NO_HARDWARE_CURSORS = "1";
   };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -146,49 +146,49 @@
     vim
     helix
     git
-    kitty
+    # kitty
     zellij    
-    rofi-wayland
-    dunst
-    mypy
-    pinta
-    libnotify
-    obsidian
-    waybar
-    networkmanagerapplet
+    # rofi-wayland
+    # dunst
+    # mypy
+    # pinta
+    # libnotify
+    # obsidian
+    # waybar
+    # networkmanagerapplet
     starship
     bat
     eza
     zsh
     python3
     python311Packages.pip
-    python311Packages.python-lsp-server
-    python311Packages.ipykernel
-    python311Packages.notebook
-    terraform
+    # python311Packages.python-lsp-server
+    # python311Packages.ipykernel
+    # python311Packages.notebook
+    # terraform
     wget
-    grim
-    feh
-    wl-clipboard
+    # grim
+    # feh
+    # wl-clipboard
     jq
-    libnotify
+    # libnotify
     lynx
     vitetris
     btop
     nh
-    pavucontrol
-    pulseaudio
+    # pavucontrol
+    # pulseaudio
     coreutils
     findutils
-    xdg-utils
-    godot_4
-    ollama
+    # xdg-utils
+    # godot_4
+    # ollama
   ];
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  };
+  # xdg.portal = {
+  #   enable = true;
+  #   extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  # };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -200,7 +200,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
