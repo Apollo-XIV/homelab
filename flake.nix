@@ -10,7 +10,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland.url = "github:hyprwm/Hyprland";
+    # hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, hyprlock, nur, ... }@inputs: {
@@ -27,7 +27,7 @@
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        inputs.home-manager.nixosModules.default
+        # inputs.home-manager.nixosModules.default
         nur.nixosModules.nur
         ({pkgs, ...}: {
           nixpkgs.overlays = [nur.overlay];
