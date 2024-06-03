@@ -211,7 +211,7 @@
     coreutils
     findutils
     xdg-utils
-    sqlite
+    # sqlite
     tailscale-systray
     awscli
     godot_4
