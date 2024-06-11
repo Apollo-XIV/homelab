@@ -51,17 +51,29 @@ in
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
+    # Rebuild command makes sure the current changes are on the exp branch and
+    # then commits and pushes it before rebuilding the system
     (pkgs.writeShellScriptBin "rebuild" ''
+      current_branch=$(git -C ~/Documents/homelab/ symbolic-ref --short HEAD)
+      if [ "$current_branch" != "exp" ]; then
+        echo "Not on exp branch, switching to exp"
+        git -C ~/Documents/homelab/ checkout exp
+      fi
       git -C ~/Documents/homelab/ add .
-      git -C ~/Documents/homelab/ commit
+      git -C ~/Documents/homelab/ commit -m "Automatic commit on exp branch"
       sudo nixos-rebuild switch --flake ~/Documents/homelab#default && \
-      git -C ~/Documents/homelab/ push
+      git -C ~/Documents/homelab/ push origin exp
     '')
+
+    # takes currently committed stuff on the exp branch, squashes it into one 
+    # commit, promtps the user for a commit message, and ff-merges it into main
+    # before pushing
     (pkgs.writeShellScriptBin "approve" ''
-      git -C ~/Documents/homelab/ add .
+      git -C ~/Documents/homelab/ checkout main
+      git -C ~/Documents/homelab/ merge --squash exp
       git -C ~/Documents/homelab/ commit
-      sudo nixos-rebuild switch --flake ~/Documents/homelab#default && \
-      git -C ~/Documents/homelab/ push
+      git -C ~/Documents/homelab/ push origin main
+      git -C ~/Documents/homelab/ checkout exp
     '')
   ];
 
