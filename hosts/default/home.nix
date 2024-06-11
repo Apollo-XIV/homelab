@@ -78,6 +78,11 @@ in
         user = "Apollo-XIV";
         identityFile = "/home/acrease/.ssh/github";
       };
+      "salas" = {
+        hostname = "192.168.x.x";
+        user = "acrease";
+        identityFile = "/home/acrease/.ssh/salas";
+      };
     };
   };
 
