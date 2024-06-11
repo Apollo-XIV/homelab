@@ -52,10 +52,16 @@ in
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
     (pkgs.writeShellScriptBin "rebuild" ''
-      git -C ~/.config/nixos/ add .
-      git -C ~/.config/nixos/ commit
-      sudo nixos-rebuild switch --flake ~/.config/nixos#default && \
-      git -C ~/.config/nixos/ push
+      git -C ~/Documents/homelab/ add .
+      git -C ~/Documents/homelab/ commit
+      sudo nixos-rebuild switch --flake ~/Documents/homelab#default && \
+      git -C ~/Documents/homelab/ push
+    '')
+    (pkgs.writeShellScriptBin "approve" ''
+      git -C ~/Documents/homelab/ add .
+      git -C ~/Documents/homelab/ commit
+      sudo nixos-rebuild switch --flake ~/Documents/homelab#default && \
+      git -C ~/Documents/homelab/ push
     '')
   ];
 
