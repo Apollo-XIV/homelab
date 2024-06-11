@@ -14,8 +14,6 @@
       theme = "catppuccin-macchiato";
     };
   };
-<<<<<<< HEAD
-=======
   home.file = {
     # ".config/zellij/layouts/default.kdl".source = "modules/zellij-layouts/default.kdl";
     ".config/zellij/layouts/default.kdl".text = ''
@@ -55,5 +53,4 @@
       }
     '';
   };
->>>>>>> exp
 }
