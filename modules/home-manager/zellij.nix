@@ -14,4 +14,7 @@
       theme = "catppuccin-macchiato";
     };
   };
+  home.file = {
+    ".config/zellij/layouts/default.kdl".source = "modules/zellij-layouts/default.kdl";
+  };
 }
