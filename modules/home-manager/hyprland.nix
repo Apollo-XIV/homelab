@@ -46,6 +46,8 @@
         "$mainMod, K, movefocus, u"
         "$mainMod, H, movefocus, l"
         "$mainMod, J, movefocus, d"
+        "Ctrl+Shift+Alt+Super, Delete, exec, systemctl poweroff || loginctl poweroff # [hidden] Power off"
+
         # See https://wiki.hyprland.org/Configuring/Keywords/
 
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
