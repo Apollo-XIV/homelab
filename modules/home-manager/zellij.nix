@@ -16,7 +16,7 @@
   };
   home.file = {
     # ".config/zellij/layouts/default.kdl".source = "modules/zellij-layouts/default.kdl";
-    ".config/zellij/layouts/default.kdl".test = ''
+    ".config/zellij/layouts/default.kdl".text = ''
       layout {
       	pane size=1 borderless=true {
       	    plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
