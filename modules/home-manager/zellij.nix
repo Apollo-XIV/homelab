@@ -11,7 +11,7 @@
           rounded_corners = true;
         };
       };
-      theme = "Catppuccin Machhiato";
+      theme = "Catppuccin Macchiato";
     };
   };
 }
