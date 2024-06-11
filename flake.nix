@@ -4,15 +4,15 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    hyprlock.url = "github:hyprwm/Hyprlock";
     nur.url = "github:nix-community/NUR";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprlock, nur, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, nur, ... }@inputs: {
     # homeConfigurations."acrease" = home-manager.lib.homeManagerConfiguration {
     #   pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
@@ -37,11 +37,11 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.acrease = {
-            imports = [
-              hyprlock.homeManagerModules.hyprlock
-            ];
-          };
+          # home-manager.users.acrease = {
+          #   imports = [
+          #     hyprlock.homeManagerModules.hyprlock
+          #   ];
+          # };
         }
       ];
     };
