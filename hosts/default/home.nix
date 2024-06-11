@@ -17,6 +17,7 @@ in
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/helix.nix
     ../../modules/home-manager/hyprland.nix
+    ../../modules/home-manager/zellij.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
