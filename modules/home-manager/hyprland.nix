@@ -46,8 +46,8 @@
         "$mainMod, K, movefocus, u"
         "$mainMod, H, movefocus, l"
         "$mainMod, J, movefocus, d"
-        "Ctrl+Shift+Alt, Delete, exec, pkill wlogout || wlogout -p layer-shell # [hidden]"
-        "Ctrl+Shift+Alt+Super, Delete, exec, systemctl poweroff || loginctl poweroff # [hidden] Power off"
+        "Ctrl+Alt, Delete, exec, pkill wlogout || wlogout -p layer-shell # [hidden]"
+        "Ctrl+Alt+Super, Delete, exec, systemctl poweroff || loginctl poweroff # [hidden] Power off"
 
         # See https://wiki.hyprland.org/Configuring/Keywords/
 
