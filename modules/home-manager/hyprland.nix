@@ -108,10 +108,10 @@
         ",XF86AudioMute,exec,pactl set-sink-mute @DEFAULT_SINK@ toggle"
 
         # Media playback control using playerctl
-        "XF86AudioPlay,exec,playerctl play-pause"
-        "XF86AudioStop,exec,playerctl stop"
-        "XF86AudioPrev,exec,playerctl previous"
-        "XF86AudioNext,exec,playerctl next"
+        ",XF86AudioPlay,exec,playerctl play-pause"
+        ",XF86AudioStop,exec,playerctl stop"
+        ",XF86AudioPrev,exec,playerctl previous"
+        ",XF86AudioNext,exec,playerctl next"
 
         # Brightness control (if applicable)
         # "XF86MonBrightnessUp,exec,xbacklight -inc 10"
