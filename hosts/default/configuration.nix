@@ -225,6 +225,7 @@
     libgcc
     obs-studio
     mpv
+    wlogout
   ];
 
   xdg.portal = {
