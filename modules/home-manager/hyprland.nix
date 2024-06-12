@@ -46,6 +46,8 @@
         "$mainMod, K, movefocus, u"
         "$mainMod, H, movefocus, l"
         "$mainMod, J, movefocus, d"
+        
+        # Power and Logout menus
         "Ctrl+Alt, Delete, exec, pkill wlogout || wlogout -p layer-shell # [hidden]"
         "Ctrl+Alt+Super, Delete, exec, systemctl poweroff || loginctl poweroff # [hidden] Power off"
 
@@ -99,6 +101,21 @@
         "$mainMod, mouse_up, workspace, e-1"
         "$mainMod TAB, , workspace, e+1"
         "$mainMod SHIFT TAB, , workspace, e-1"
+
+        # Volume control using pactl
+        "XF86AudioRaiseVolume,exec,pactl set-sink-volume @DEFAULT_SINK@ +5%"
+        "XF86AudioLowerVolume,exec,pactl set-sink-volume @DEFAULT_SINK@ -5%"
+        "XF86AudioMute,exec,pactl set-sink-mute @DEFAULT_SINK@ toggle"
+
+        # Media playback control using playerctl
+        "XF86AudioPlay,exec,playerctl play-pause"
+        "XF86AudioStop,exec,playerctl stop"
+        "XF86AudioPrev,exec,playerctl previous"
+        "XF86AudioNext,exec,playerctl next"
+
+        # Brightness control (if applicable)
+        # "XF86MonBrightnessUp,exec,xbacklight -inc 10"
+        # "XF86MonBrightnessDown,exec,xbacklight -dec 10"
 
       ];
       bindm = [
