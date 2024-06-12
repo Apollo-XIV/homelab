@@ -103,9 +103,9 @@
         "$mainMod SHIFT TAB, , workspace, e-1"
 
         # Volume control using pactl
-        "XF86AudioRaiseVolume,exec,pactl set-sink-volume @DEFAULT_SINK@ +5%"
-        "XF86AudioLowerVolume,exec,pactl set-sink-volume @DEFAULT_SINK@ -5%"
-        "XF86AudioMute,exec,pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        ",XF86AudioRaiseVolume,exec,pactl set-sink-volume @DEFAULT_SINK@ +5%"
+        ",XF86AudioLowerVolume,exec,pactl set-sink-volume @DEFAULT_SINK@ -5%"
+        ",XF86AudioMute,exec,pactl set-sink-mute @DEFAULT_SINK@ toggle"
 
         # Media playback control using playerctl
         "XF86AudioPlay,exec,playerctl play-pause"
