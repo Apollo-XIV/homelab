@@ -14,7 +14,7 @@
         "Unknown-1, disable"
       ];
 
-      exec-once = "waybar &";
+      exec-once = "hyprpaper & waybar &";
       
       input = {
         kb_layout = "gb";
