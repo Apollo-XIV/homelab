@@ -91,6 +91,11 @@ in
         user = "Apollo-XIV";
         identityFile = "/home/acrease/.ssh/github";
       };
+      "bitbucket.org" = {
+        hostname = "bitbucket.org";
+        user = "alex.crease@jdplc.com";
+        identityFile = "/home/acrease/.ssh/bitbucket";
+      };
       "salas" = {
         hostname = "192.168.x.x";
         user = "acrease";
