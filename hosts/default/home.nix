@@ -155,7 +155,7 @@ in
           # List of key names
           keys=("bitbucket" "github" "salas")
 
-          for key in "$\{keys[@]}"; do
+          for key in "\$\{keys[@]\}"; do
             key_path=~/.ssh/$key
 
             if [ ! -f "$key_path" ]; then
