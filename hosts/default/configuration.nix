@@ -172,6 +172,7 @@
     waybar
     networkmanagerapplet
     starship
+    hyprpaper
     bat
     eza
     zsh
