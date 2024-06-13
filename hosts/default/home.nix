@@ -152,8 +152,6 @@ in
       executable = true;
       text = ''
         init-keys() {
-          mkdir -p ~/.keys
-
           # List of key names
           keys=("bitbucket" "github" "salas")
 
