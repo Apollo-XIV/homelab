@@ -8,9 +8,8 @@
         force = true;
         default = "DuckDuckGo";
         privateDefault = "DuckDuckGo";
-        engines = [
-          {
-            "Nix Packages" = {
+        engines = {
+          "Nix Packages" = {
             urls = [{
               template = "https://search.nixos.org/packages";
               params = [
@@ -20,8 +19,8 @@
             }];
             icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = [ "@np" ];
-          }
-        ];
+          };
+        };
       };
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
