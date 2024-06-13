@@ -17,6 +17,7 @@ in
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/helix.nix
     ../../modules/home-manager/hyprland.nix
+    ../../modules/home-manager/hyprpaper.nix
     ../../modules/home-manager/zellij.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
@@ -90,6 +91,11 @@ in
         hostname = "github.com";
         user = "Apollo-XIV";
         identityFile = "/home/acrease/.ssh/github";
+      };
+      "bitbucket.org" = {
+        hostname = "bitbucket.org";
+        user = "alex.crease@jdplc.com";
+        identityFile = "/home/acrease/.ssh/bitbucket";
       };
       "salas" = {
         hostname = "192.168.x.x";

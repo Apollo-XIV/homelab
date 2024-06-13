@@ -172,6 +172,7 @@
     waybar
     networkmanagerapplet
     starship
+    hyprpaper
     bat
     eza
     zsh
@@ -226,6 +227,7 @@
     obs-studio
     mpv
     wlogout
+    slack
   ];
 
   xdg.portal = {
