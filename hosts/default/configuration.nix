@@ -226,6 +226,7 @@
     obs-studio
     mpv
     wlogout
+    slack
   ];
 
   xdg.portal = {
