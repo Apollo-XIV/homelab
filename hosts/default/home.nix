@@ -147,7 +147,28 @@ in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+    "utils.sh" = {
+      enable = true;
+      executable = true;
+      text = ''
+        init-keys() {
+          mkdir -p ~/.keys
 
+          # List of key names
+          keys=("bitbucket" "github" "salas")
+
+          for key in "${keys[@]}"; do
+            key_path=~/.keys/$key
+
+            if [ ! -f "$key_path" ]; then
+              ssh-keygen -t rsa -b 4096 -N "" -f "$key_path"
+            else
+              echo "$key key already exists."
+            fi
+          done
+        }
+      '';
+    };
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose

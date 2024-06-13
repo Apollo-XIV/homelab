@@ -17,6 +17,7 @@
     initExtra = ''
       eval "$(zoxide init zsh --cmd cd)"
       eval "$(starship init zsh)"
+      source utils.sh
     '';
 
     shellAliases = {
