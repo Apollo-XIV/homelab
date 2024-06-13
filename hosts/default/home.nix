@@ -156,7 +156,7 @@ in
           keys=("bitbucket" "github" "salas")
 
           for key in "$\{keys[@]}"; do
-            key_path=~/.keys/$key
+            key_path=~/.ssh/$key
 
             if [ ! -f "$key_path" ]; then
               ssh-keygen -t rsa -b 4096 -N "" -f "$key_path"
