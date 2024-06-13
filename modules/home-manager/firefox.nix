@@ -51,7 +51,7 @@
       settings = {
         "ui.systemUsesDarkTheme" = 1;
         "browset.in-content.dark-mode" = true;
-      }
+      };
       userChrome = ''
         
       '';
