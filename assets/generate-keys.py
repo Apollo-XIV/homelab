@@ -5,7 +5,7 @@ import subprocess
 
 def init_keys():
     keys = ["bitbucket", "github", "salas"]
-    key_dir = os.path.expanduser("~/.keys")
+    key_dir = os.path.expanduser("~/.ssh")
 
     # Create the directory if it doesn't exist
     os.makedirs(key_dir, exist_ok=True)
