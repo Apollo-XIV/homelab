@@ -147,24 +147,32 @@ in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    "utils.sh" = {
+    "utils.py" = {
       enable = true;
       executable = true;
       text = ''
-        init-keys() {
-          # List of key names
-          keys=("bitbucket" "github" "salas")
+        \# !/usr/bin/env python3
 
-          for key in "\$\{keys[@]\}"; do
-            key_path=~/.ssh/$key
+        import os
+        import subprocess
 
-            if [ ! -f "$key_path" ]; then
-              ssh-keygen -t rsa -b 4096 -N "" -f "$key_path"
-            else
-              echo "$key key already exists."
-            fi
-          done
-        }
+        def init_keys():
+            keys = ["bitbucket", "github", "salas"]
+            key_dir = os.path.expanduser("~/.keys")
+
+            # Create the directory if it doesn't exist
+            os.makedirs(key_dir, exist_ok=True)
+
+            for key in keys:
+                key_path = os.path.join(key_dir, key)
+
+                if not os.path.exists(key_path):
+                    subprocess.run(["ssh-keygen", "-t", "rsa", "-b", "4096", "-N", "", "-f", key_path])
+                else:
+                    print(f"\{key\} key already exists.")
+
+        if __name__ == "__main__":
+            init_keys()
       '';
     };
     # # You can also set the file content immediately.
