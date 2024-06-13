@@ -147,7 +147,7 @@ in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    "generate-keys.py" = {
+    "utils/generate-keys.py" = {
       enable = true;
       executable = true;
       source = ../../assets/generate-keys.py;
