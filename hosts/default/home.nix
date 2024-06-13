@@ -147,10 +147,15 @@ in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    "utils.py" = {
+    "generate-keys.py" = {
       enable = true;
       executable = true;
-      source = ../../assets/utils.py;
+      source = ../../assets/generate-keys.py;
+    };
+    "utils.sh" = {
+      enable = true;
+      executable = true;
+      source = ../../assets/utils.sh;
     };
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
