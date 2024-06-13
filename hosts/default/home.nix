@@ -150,7 +150,7 @@ in
     "utils.py" = {
       enable = true;
       executable = true;
-      source = "~/Documents/homelab/assets/utils.py";
+      source = "/home/acresae/Documents/homelab/assets/utils.py";
     };
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
