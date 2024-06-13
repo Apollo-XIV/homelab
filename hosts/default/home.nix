@@ -19,6 +19,7 @@ in
     ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/hyprpaper.nix
     ../../modules/home-manager/zellij.nix
+    ../../modules/home-manager/firefox.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -105,17 +106,6 @@ in
     };
   };
 
-  programs.firefox = {
-    enable = true;
-    profiles.acrease = {
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        ublock-origin
-        vimium-c
-        dashlane
-        darkreader
-      ];
-    };
-  };
   
   programs.hyprlock.enable = true;
 
@@ -147,7 +137,16 @@ in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-
+    "utils/generate-keys.py" = {
+      enable = true;
+      executable = true;
+      source = ../../assets/generate-keys.py;
+    };
+    "utils.sh" = {
+      enable = true;
+      executable = true;
+      source = ../../assets/utils.sh;
+    };
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
