@@ -33,19 +33,19 @@
           name = "youtube";
           tags = ["media"];
           keyword = "youtube";
-          url = "www.youtube.com"
+          url = "www.youtube.com";
         }
         {
           name = "github";
           tags = ["dev"];
           keyword = "git";
-          url = "https://github.com"
+          url = "https://github.com";
         }
         {
           name = "nixpkgs";
           tags = ["os"];
           keyword = "nixsearch";
-          url = "https://search.nixos.org/packages"
+          url = "https://search.nixos.org/packages";
         }
       ];
       userChrome = ''
