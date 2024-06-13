@@ -19,6 +19,7 @@ in
     ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/hyprpaper.nix
     ../../modules/home-manager/zellij.nix
+    ../../modules/home-manager/firefox.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -105,17 +106,6 @@ in
     };
   };
 
-  programs.firefox = {
-    enable = true;
-    profiles.acrease = {
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        ublock-origin
-        vimium-c
-        dashlane
-        darkreader
-      ];
-    };
-  };
   
   programs.hyprlock.enable = true;
 
