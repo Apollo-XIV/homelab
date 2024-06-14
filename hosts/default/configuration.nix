@@ -145,12 +145,7 @@
   };
   services.xserver.enable = true;
 
-  programs.qt5ct = {
-    enable = true;
-    # settings = {
-    #   theme = "kvantum-dark"; # Set the Qt5 theme to a dark theme, e.g., Kvantum dark theme
-    # };
-  };
+  qt5.platformTheme = "qt5ct";
 
   environment.variables = {
     GTK_THEME = "Adwaita-dark";
