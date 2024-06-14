@@ -147,9 +147,9 @@
 
   programs.qt5ct = {
     enable = true;
-    settings = {
-      theme = "kvantum-dark"; # Set the Qt5 theme to a dark theme, e.g., Kvantum dark theme
-    };
+    # settings = {
+    #   theme = "kvantum-dark"; # Set the Qt5 theme to a dark theme, e.g., Kvantum dark theme
+    # };
   };
 
   environment.variables = {
