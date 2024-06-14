@@ -154,10 +154,6 @@
       name = "Adwaita-dark";
       package = pkgs.gnome.adwaita-gtk-theme;
     };
-    iconTheme = {
-      name = "Adwaita";
-      package = pkgs.gnome.adwaita-icon-theme;
-    };
   };
 
   environment.variables = {
