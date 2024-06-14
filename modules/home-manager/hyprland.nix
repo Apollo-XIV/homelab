@@ -10,7 +10,7 @@
       "$fileManager" = "dolphin";
       monitor = [
         "HDMI-A-1, 1920x1080, 0x0, 1"
-        "DP-1, 2560x1080, 1920x260, 1"
+        "DP-1, 2560x1080, 1920x270, 1"
         "Unknown-1, disable"
       ];
 
