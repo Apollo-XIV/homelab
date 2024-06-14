@@ -240,6 +240,7 @@
     mpv
     wlogout
     slack
+    libsForQt5.qt5ct
   ];
 
   xdg.portal = {
