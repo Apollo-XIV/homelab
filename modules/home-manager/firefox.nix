@@ -29,7 +29,7 @@
         vimium-c
         dashlane
         darkreader
-        "chatgptbox-2.5.6"
+        chatgptbox
       ];
       search = {
         force = true;
