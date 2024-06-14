@@ -149,12 +149,12 @@
     style = "Adwaita-dark";
     platformTheme = "qt5ct";
   };
-  gtk = {
-    theme = {
-      name = "Adwaita-dark";
-      package = pkgs.gnome.adwaita-gtk-theme;
-    };
-  };
+  # gtk = {
+  #   theme = {
+  #     name = "Adwaita-dark";
+  #     package = pkgs.gnome.adwaita-gtk-theme;
+  #   };
+  # };
 
   environment.variables = {
     GTK_THEME = "Adwaita-dark";
