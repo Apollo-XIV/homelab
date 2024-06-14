@@ -141,10 +141,27 @@
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-    
+    theme = "breeze-dark";
   };
   services.xserver.enable = true;
 
+  qt = {
+    style = "Adwaita-dark";
+    platformTheme = "qt5ct";
+  };
+  # gtk = {
+  #   theme = {
+  #     name = "Adwaita-dark";
+  #     package = pkgs.gnome.adwaita-gtk-theme;
+  #   };
+  # };
+
+
+  environment.variables = {
+    GTK_THEME = "Adwaita-dark";
+    QT_QPA_PLATFORMTHEME = "qt5ct";
+    KVANTUM_DEFAULT_THEME = "KvAdaptaDark";
+  };
 
   environment.sessionVariables = {
     EDITOR = "hx";
@@ -228,6 +245,7 @@
     mpv
     wlogout
     slack
+    libsForQt5.qt5ct
   ];
 
   xdg.portal = {
