@@ -16,7 +16,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   programs.zsh.enable = true;
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "mishim"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   hardware.opengl = {
     enable = true;
