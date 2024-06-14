@@ -145,9 +145,11 @@
   };
   services.xserver.enable = true;
 
-  qt.platformTheme = "qt5ct";
+  qt = {
+    style = "Adwaita-dark";
+    platformTheme = "qt5ct";
+  };
   gtk = {
-    enable = true;
     theme = {
       name = "Adwaita-dark";
       package = pkgs.gnome.adwaita-gtk-theme;
