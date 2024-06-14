@@ -145,7 +145,7 @@
   };
   services.xserver.enable = true;
 
-  qt5.platformTheme = "qt5ct";
+  qt.platformTheme = "qt5ct";
 
   environment.variables = {
     GTK_THEME = "Adwaita-dark";
