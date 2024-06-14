@@ -141,7 +141,7 @@
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-    
+    theme = "breeze-dark";
   };
   services.xserver.enable = true;
 
