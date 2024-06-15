@@ -247,6 +247,7 @@
     slack
     libsForQt5.qt5ct
     exercism
+    go
   ];
 
   xdg.portal = {
