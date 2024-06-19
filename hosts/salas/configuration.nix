@@ -206,6 +206,7 @@
   services.k3s = {
     enable = true;
     clusterInit = true;
+    extraFlags = "--write-kubeconfig-mode 0644";
   };
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
