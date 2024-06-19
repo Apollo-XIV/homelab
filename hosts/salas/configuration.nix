@@ -209,8 +209,8 @@
     extraFlags = "--write-kubeconfig-mode 0644";
   };
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  networking.firewall.allowedTCPPorts = [ 6443 ];
+  networking.firewall.allowedUDPPorts = [ 6443 ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 

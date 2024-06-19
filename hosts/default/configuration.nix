@@ -250,6 +250,7 @@
     go
     kubectl
     blender
+    k9s
   ];
 
   xdg.portal = {
