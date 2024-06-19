@@ -246,6 +246,9 @@
     wlogout
     slack
     libsForQt5.qt5ct
+    exercism
+    go
+    blender
   ];
 
   xdg.portal = {

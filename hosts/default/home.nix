@@ -100,7 +100,7 @@ in
         identityFile = "/home/acrease/.ssh/bitbucket";
       };
       "salas" = {
-        hostname = "192.168.x.x";
+        hostname = "192.168.1.205";
         user = "acrease";
         identityFile = "/home/acrease/.ssh/salas";
       };
