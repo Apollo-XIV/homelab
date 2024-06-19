@@ -30,14 +30,14 @@
     font-awesome
   ];
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    users = {
-      "acrease" = import ./home.nix;
-    };
-  };
+  # home-manager = {
+  #   extraSpecialArgs = { inherit inputs; };
+  #   useGlobalPkgs = true;
+  #   useUserPackages = true;
+  #   users = {
+  #     "acrease" = import ./home.nix;
+  #   };
+  # };
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -200,8 +200,9 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-
+  services.openssh = {
+    enable = true;
+  }
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

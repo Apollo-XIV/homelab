@@ -46,6 +46,12 @@
           }
         ];
       };
+      salas = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/salas/configuration.nix
+        ];
+      };
       live-iso = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
