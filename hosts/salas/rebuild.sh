@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 sudo -v
 cd ~/Documents/homelab
 git pull
