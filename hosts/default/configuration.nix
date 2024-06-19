@@ -248,6 +248,7 @@
     libsForQt5.qt5ct
     exercism
     go
+    kubectl
     blender
   ];
 
