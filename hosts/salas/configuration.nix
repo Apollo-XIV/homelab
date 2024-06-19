@@ -203,6 +203,10 @@
   services.openssh = {
     enable = true;
   };
+  services.k3s = {
+    enable = true;
+    clusterInit = true;
+  };
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
