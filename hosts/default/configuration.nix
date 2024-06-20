@@ -231,7 +231,7 @@
     xdg-utils
     sqlite
     tailscale-systray
-    awscli
+    awscli2
     godot_4
     ollama
     vscode
