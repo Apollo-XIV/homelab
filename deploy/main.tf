@@ -1,1 +1,7 @@
+provider "kubernetes" {
 
+}
+
+provider "helm" {
+
+}

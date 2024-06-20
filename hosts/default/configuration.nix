@@ -251,6 +251,7 @@
     kubectl
     blender
     k9s
+    helm
   ];
 
   xdg.portal = {
