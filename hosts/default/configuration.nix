@@ -252,6 +252,7 @@
     blender
     k9s
     helm
+    gnumeric
   ];
 
   xdg.portal = {
