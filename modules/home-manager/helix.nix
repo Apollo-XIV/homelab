@@ -11,6 +11,7 @@
         enable = true;
         max-wrap = 20;
         max-indent-retain = 0;
+        wrap-indicator = "";
         wrap-at-text-width = true;
       };
       text-width = 120;
