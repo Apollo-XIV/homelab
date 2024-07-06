@@ -7,7 +7,13 @@
     extraPackages = [];
     languages.language = [{
       name = "markdown";
-      soft-wrap = true;
+      soft-wrap = {
+        enable = true;
+        max-wrap = 20;
+        max-indent-retain = 40;
+        wrap-at-text-width = true;
+      };
+      text-width = 120;
     }];
     settings = {
       theme = "kanagawa";
