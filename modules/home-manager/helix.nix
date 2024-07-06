@@ -5,12 +5,10 @@
     enable = true;
     defaultEditor = true;
     extraPackages = [];
-    languages = [
-      {
-        name = "markdown";
-        softwrap = true;
-      }
-    ];
+    languages.language = [{
+      name = "markdown";
+      soft-wrap = true;
+    }];
     settings = {
       theme = "kanagawa";
       editor = {
