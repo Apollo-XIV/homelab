@@ -10,7 +10,7 @@
       soft-wrap = {
         enable = true;
         max-wrap = 20;
-        max-indent-retain = 40;
+        max-indent-retain = 0;
         wrap-at-text-width = true;
       };
       text-width = 120;
