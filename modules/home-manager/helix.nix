@@ -14,7 +14,7 @@
         wrap-indicator = "";
         wrap-at-text-width = true;
       };
-      text-width = 120;
+      text-width = 80;
     }];
     settings = {
       theme = "kanagawa";
