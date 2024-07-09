@@ -28,6 +28,14 @@
           max-length = 200;
           separate-outputs = true;
         };
+        network = {
+          # interface = "wlp2*"; # (Optional) To force the use of this interface
+          format-wifi = "{essid} ({signalStrength}%) ";
+          format-ethernet = "{ifname}: {ipaddr}/{cidr} ";
+          format-linked = "{ifname} (No IP) ";
+          format-disconnected = "Disconnected ";
+          format-alt = "{ifname}: {ipaddr}/{cidr}";
+        };
       }
     ];
     style = ''
