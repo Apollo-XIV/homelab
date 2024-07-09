@@ -66,7 +66,7 @@
       @define-color mantle #181825;
       @define-color crust #11111b;
       * {
-        font-family: FantasqueSansMono Nerd Font;
+        font-family: FiraCode Mono, FantasqueSansMono Nerd Font;
         font-size: 15px;
         min-height: 0;
       }
