@@ -67,7 +67,7 @@
       @define-color crust #11111b;
       * {
         font-family: FantasqueSansMono Nerd Font;
-        font-size: 13px;
+        font-size: 15px;
         min-height: 0;
       }
 
@@ -107,6 +107,7 @@
       #battery,
       #pulseaudio,
       #custom-lock,
+      #network,
       #custom-power {
         background-color: @surface0;
         padding: 0.5rem 1rem;
