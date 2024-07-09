@@ -4,7 +4,7 @@
   programs.waybar = {
     enable = true;
     settings = {
-      height = 30;
+      height = "30";
       spacing = 4;
       modules-left = [
         "hypr/workspaces"
