@@ -15,9 +15,14 @@
         ];
         modules-center = [
           "hyprland/window"
-          "clock"
         ];
         modules-right = [
+          "pulseaudio"
+          "network"
+          "cpu"
+          "memory"
+          "clock"
+          "tray"
         ];
         "hyprland/window" = {
           max-length = 200;
