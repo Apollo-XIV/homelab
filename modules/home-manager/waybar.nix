@@ -108,6 +108,8 @@
       #pulseaudio,
       #custom-lock,
       #network,
+      #cpu,
+      #memory,
       #custom-power {
         background-color: @surface0;
         padding: 0.5rem 1rem;
