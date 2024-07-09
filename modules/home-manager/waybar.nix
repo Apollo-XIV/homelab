@@ -14,11 +14,15 @@
           "wlr/taskbar"
         ];
         modules-center = [
+          "hyprland/window"
           "clock"
         ];
         modules-right = [
-          ""
         ];
+        "hyprland/window" = {
+          max-length = 200;
+          separate-outputs = true;
+        };
       }
     ];
     style = ''
