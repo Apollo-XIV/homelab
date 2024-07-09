@@ -67,7 +67,7 @@
       @define-color crust #11111b;
       * {
         font-family: FantasqueSansMono Nerd Font;
-        font-size: 17px;
+        font-size: 13px;
         min-height: 0;
       }
 
