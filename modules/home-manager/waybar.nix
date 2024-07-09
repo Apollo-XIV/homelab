@@ -67,7 +67,7 @@
       @define-color crust #11111b;
       * {
         font-family: FiraCode Mono, FantasqueSansMono Nerd Font;
-        font-size: 15px;
+        font-size: 14px;
         min-height: 0;
       }
 
