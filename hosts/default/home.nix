@@ -20,6 +20,7 @@ in
     ../../modules/home-manager/hyprpaper.nix
     ../../modules/home-manager/zellij.nix
     ../../modules/home-manager/firefox.nix
+    ../../modules/home-manager/waybar.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.

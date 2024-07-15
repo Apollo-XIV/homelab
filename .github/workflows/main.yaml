@@ -1,0 +1,13 @@
+name: Dispatch
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  infra:
+    name: Deploy Terraform
+    uses: ./.github/workflows/infra.yaml
+    secrets: inherit

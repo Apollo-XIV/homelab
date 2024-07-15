@@ -1,0 +1,33 @@
+config_repo: TerraformData = {
+  connection {
+    host        = "salas"
+    private_key = try(file("~/.ssh/salas"), file("${path.root}/salas_key"))
+    user        = "acrease"
+  }
+  provisioners {
+    clone-repo: RemoteExec = {
+      when   = create
+      inline = ["git clone https://github.com/apollo-xiv/homelab config"]
+    }
+    destroy: RemoteExec = {
+      when   = destroy
+      inline = ["rm -rf config"]
+    }
+  }
+}
+
+update: NullResource = {
+  connection {
+    host        = "salas"
+    private_key = try(file("~/.ssh/salas"), file("${path.root}/salas_key"))
+    user        = "root"
+  }
+  rebuild: RemoteExec = {
+    inline = [
+      "git -C ~/config pull",                     // pull the latest config
+      "nixos-rebuild test --flake ~/config#salas" // sudo nixos update
+    ]
+  }
+  depends_on = [config_repo]
+}
+
