@@ -256,6 +256,8 @@
     helm
     gnumeric
     parsec-bin
+    moonlight-qt
+    sunshine
   ];
 
   xdg.portal = {
