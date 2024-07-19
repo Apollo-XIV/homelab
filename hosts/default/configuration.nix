@@ -255,6 +255,7 @@
     k9s
     helm
     gnumeric
+    parsec-bin
   ];
 
   xdg.portal = {
