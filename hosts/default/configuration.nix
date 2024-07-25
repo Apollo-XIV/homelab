@@ -258,7 +258,9 @@
     parsec-bin
     moonlight-qt
     sunshine
+    gnome3.adwaita-icon-theme
   ];
+
 
   xdg.portal = {
     enable = true;
