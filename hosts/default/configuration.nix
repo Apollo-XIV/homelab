@@ -261,6 +261,13 @@
     gnome3.adwaita-icon-theme
   ];
 
+  services.k3s = {
+    enable = true;
+    configPath = /home/acrease/.kube/config;
+    # clusterInit = true;
+    extraFlags = "--write-kubeconfig-mode 0644";
+  };
+
 
   xdg.portal = {
     enable = true;
