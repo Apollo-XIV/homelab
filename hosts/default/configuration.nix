@@ -299,7 +299,7 @@
   networking.firewall.allowedUDPPorts = [ 9090 ];
   services.resolved = {
     # enable = true;
-    fallbackDns = ["192.168.1.205"];
+    # fallbackDns = ["192.168.1.205"];
   };
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
