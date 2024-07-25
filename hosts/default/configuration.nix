@@ -297,6 +297,11 @@
   networking.nameservers = [ "192.168.1.205" ];
   networking.firewall.allowedTCPPorts = [ 9090 ];
   networking.firewall.allowedUDPPorts = [ 9090 ];
+  services.resolved = {
+    enable = true;
+    dns = ["192.168.1.205"];
+    dnsServers = ["192.168.1.205"];
+  };
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
