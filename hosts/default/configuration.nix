@@ -293,7 +293,7 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.nameservers = [ "192.168.1.205:30053" ];
+  networking.nameservers = [ "192.168.1.205" ];
   networking.firewall.allowedTCPPorts = [ 9090 ];
   networking.firewall.allowedUDPPorts = [ 9090 ];
   # Or disable the firewall altogether.
