@@ -253,7 +253,7 @@
     kubectl
     blender
     k9s
-    helm
+    kubernetes-helm
     gnumeric
     parsec-bin
     moonlight-qt
