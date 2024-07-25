@@ -243,6 +243,7 @@
     reaper
     gcc
     libgcc
+    busybox
     obs-studio
     mpv
     wlogout
