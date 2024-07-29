@@ -244,6 +244,7 @@
     gcc
     libgcc
     busybox
+    protontricks
     obs-studio
     mpv
     wlogout
