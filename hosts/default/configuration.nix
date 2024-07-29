@@ -260,6 +260,7 @@
     moonlight-qt
     sunshine
     gnome3.adwaita-icon-theme
+    brave
   ];
 
 
