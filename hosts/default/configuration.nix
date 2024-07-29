@@ -249,6 +249,7 @@
     mpv
     wlogout
     slack
+    docker
     libsForQt5.qt5ct
     exercism
     go
