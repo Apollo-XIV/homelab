@@ -10,7 +10,10 @@
     users.users.acrease = {
       isNormalUser = true;
       description = "Alex Crease";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager"
+        "wheel" 
+        "docker"
+        ];
       shell = pkgs.zsh;
       packages = with pkgs; [
         firefox
