@@ -283,6 +283,13 @@
     enable = true;
     openFirewall = true;
   };
+
+  virtualisation.docker = {
+    enable = true;
+    enableNvidia = true;
+    enableOnBoot = true;
+    autoPrune.enable = true;
+  };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
