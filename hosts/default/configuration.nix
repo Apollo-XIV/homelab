@@ -251,7 +251,7 @@
     slack
     docker
     libsForQt5.qt5ct
-    libsForQt5.patitionmanager
+    libsForQt5.partitionmanager
     exercism
     go
     kubectl
