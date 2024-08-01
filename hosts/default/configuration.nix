@@ -252,6 +252,7 @@
     docker
     libsForQt5.qt5ct
     libsForQt5.partitionmanager
+    kdePackages.partitionmanager
     exercism
     go
     kubectl
