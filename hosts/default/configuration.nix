@@ -251,6 +251,7 @@
     slack
     docker
     libsForQt5.qt5ct
+    libsForQt5.patitionmanager
     exercism
     go
     kubectl
