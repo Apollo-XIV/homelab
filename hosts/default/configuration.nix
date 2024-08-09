@@ -191,6 +191,7 @@
     waybar
     networkmanagerapplet
     starship
+    lsix
     hyprpaper
     bat
     eza
@@ -279,6 +280,10 @@
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
+
+  # services.openvpn.servers = {
+  #   office.config = '' config '';
+  # }
 
   services.sunshine = {
     enable = true;
