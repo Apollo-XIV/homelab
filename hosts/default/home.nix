@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, hyprland, ... }:
+{ lib, config, pkgs, inputs, hyprland, ... }:
 
 # let
 #   nur-pkgs = import (builtins.fetchTarball  {
