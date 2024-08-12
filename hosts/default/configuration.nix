@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./user.nix
-      ../../modules/stylix.nix
+      # ../../modules/stylix.nix
     ];
 
   # Bootloader.
