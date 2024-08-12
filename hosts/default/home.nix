@@ -170,6 +170,7 @@ in
   stylix = {
     enable = true;
     autoEnable = true;
+    k9s.enable = true;
   };
 
   # Home Manager can also manage your environment variables through
