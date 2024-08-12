@@ -58,6 +58,7 @@
       	outline-style: none;
       }
 
+			/*
       #lock {
           background-image: image(url(""), url("/usr/local/share/wlogout/icons/lock.png"));
       }
@@ -81,6 +82,7 @@
       #reboot {
           background-image: image(url(""), url("/usr/local/share/wlogout/icons/reboot.png"));
       }
+			*/
     '';
 	};
 }
