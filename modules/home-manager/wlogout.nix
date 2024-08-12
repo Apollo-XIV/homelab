@@ -43,7 +43,7 @@
       button {
         color: #0f2137;
       	font-size: 16px;
-      	background-color: #e7e7ec;
+      	background-color: #17171c;
       	border-style: none;
       	background-repeat: no-repeat;
       	background-position: center;
@@ -55,7 +55,7 @@
       }
 
       button:focus, button:active, button:hover {
-      	background-color: #b9b1e2;
+      	background-color: #194112;
       	outline-style: none;
       }
 
