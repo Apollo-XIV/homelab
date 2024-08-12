@@ -93,7 +93,7 @@ in
   programs.btop = {
     enable = true;
     settings = {
-      color_theme = "TTY";
+      color_theme = lib.mkForce "TTY";
       theme_background = false;
     };
   };
