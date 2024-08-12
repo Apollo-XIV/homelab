@@ -22,6 +22,7 @@ in
     ../../modules/home-manager/firefox.nix
     ../../modules/home-manager/waybar.nix
     ../../modules/home-manager/hyprlock.nix
+    ../../modules/home-manager/wlogout.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
