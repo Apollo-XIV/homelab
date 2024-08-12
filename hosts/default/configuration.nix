@@ -265,6 +265,7 @@
     sunshine
     gnome3.adwaita-icon-theme
     brave
+    onlyoffice-bin
   ];
 
 
