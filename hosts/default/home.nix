@@ -95,6 +95,7 @@ in
     settings = {
       color_theme = lib.mkForce "TTY";
       theme_background = false;
+      vim_keys = true;
     };
   };
 
