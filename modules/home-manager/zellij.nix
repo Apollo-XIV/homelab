@@ -11,7 +11,7 @@
           rounded_corners = true;
         };
       };
-      theme = "catppuccin-macchiato";
+      # theme = "catppuccin-macchiato";
     };
   };
   home.file = {
