@@ -265,6 +265,8 @@
     sunshine
     gnome3.adwaita-icon-theme
     brave
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
     onlyoffice-bin
   ];
 
