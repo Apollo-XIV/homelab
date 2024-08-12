@@ -6,12 +6,10 @@
 		layout = [
 			{
 				label = "lock";
-				action = "sleep 1; hyprlock";
+				action = "hyprlock";
 				text = "lock";
 				circular = true;
 				keybind = "";
-				height = 0.5;
-				width = 0.5;
 			}
 			{
 				label = "logout";
@@ -19,8 +17,6 @@
 				text = "logout";
 				circular = true;
 				keybind = "";
-				height = 0.5;
-				width = 0.5;
 			}
 			{
 				label = "shutdown";
@@ -28,8 +24,13 @@
 				text = "shutdown";
 				circular = true;
 				keybind = "";
-				height = 0.5;
-				width = 0.5;
+			}
+			{
+				label = "reboot";
+				action = "systemctl reboot";
+				text = "reboot";
+				circular = true;
+				keybind = "";
 			}
 		];
     style = ''
@@ -37,7 +38,7 @@
       	background-image: none;
       }
       window {
-      	background-color: rgba(250, 250, 250, 0.8);
+      	background-color: rgba(28, 51, 33, 0.5);
       }
       button {
         color: #0f2137;
