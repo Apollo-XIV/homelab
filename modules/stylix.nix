@@ -3,6 +3,7 @@
 {
   stylix = {
     enable = true;
+    autoEnable = true;
     image = /home/acrease/Documents/homelab/assets/dark_nature.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/ashes.yaml";
     polarity = "dark";
