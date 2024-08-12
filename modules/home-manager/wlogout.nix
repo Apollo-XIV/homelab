@@ -9,28 +9,28 @@
 				action = "hyprlock";
 				text = "lock";
 				circular = true;
-				keybind = "";
+				keybind = "l";
 			}
 			{
 				label = "logout";
 				action = "sleep 1; hyprctl dispatch exit";
 				text = "logout";
 				circular = true;
-				keybind = "";
+				keybind = "L";
 			}
 			{
 				label = "shutdown";
 				action = "systemctl poweroff";
 				text = "shutdown";
 				circular = true;
-				keybind = "";
+				keybind = "s";
 			}
 			{
 				label = "reboot";
 				action = "systemctl reboot";
 				text = "reboot";
 				circular = true;
-				keybind = "";
+				keybind = "r";
 			}
 		];
     style = ''
@@ -38,7 +38,7 @@
       	background-image: none;
       }
       window {
-      	background-color: rgba(28, 51, 33, 0.5);
+      	background-color: rgba(18, 31, 23, 0.5);
       }
       button {
         color: #0f2137;
