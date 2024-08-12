@@ -81,7 +81,7 @@
       }
 
       #reboot {
-          background-image: image(url(""), url("/usr/local/share/wlogout/icons/reboot.png"));
+          background-image: image(url("/home/acrease/Documents/homelab/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
       }
 			*/
     '';
