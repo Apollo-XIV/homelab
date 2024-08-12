@@ -157,6 +157,14 @@ in
     #   org.gradle.daemon.idletimeout=3600000
     # '';
   };
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "image/*" = "firefox.desktop";
+      "image/png" = "firefox.desktop";
+      "image/jpg" = "firefox.desktop";
+    };
+  };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home
