@@ -280,14 +280,30 @@
   };
 
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [ 
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland
-    ];
+  xdg = {
+    mime.defaultApplications = {
+      "text/html" = "firefox.desktop";
+      "application/pdf" = "firefox.desktop";
+      "image/*" = "gimp.desktop";
+      "x-scheme-handler/http" = "firefox.desktop";
+      "x-scheme-handler/https" = "firefox.desktop";
+      "x-scheme-handler/about" = "firefox.desktop";
+      "x-scheme-handler/unknown" = "firefox.desktop";
+    };
+    portal = {
+      enable = true;
+      config = {
+        common.default = "*";
+      };
+      extraPortals = with pkgs; [ 
+        xdg-desktop-portal-gtk
+        xdg-desktop-portal-hyprland
+      ];
+    };
   };
+
   environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
+
   # services.openvpn.servers = {
   #   office.config = '' config '';
   # }
