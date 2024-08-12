@@ -253,7 +253,7 @@
     docker
     libsForQt5.qt5ct
     kdePackages.partitionmanager
-    kdePackages.polkit-kde-agent-1
+    kdePackages.polkit-kde-agent
     exercism
     go
     kubectl
