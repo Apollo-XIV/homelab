@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./user.nix
+      ../../modules/stylix.nix
     ];
 
   # Bootloader.
@@ -25,6 +26,7 @@
   };
   services.xserver.videoDrivers = [ "nvidia" ];
     
+
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = true;
