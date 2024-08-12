@@ -253,6 +253,7 @@
     docker
     libsForQt5.qt5ct
     kdePackages.partitionmanager
+    kdePackages.polkit-kde-agent-1
     exercism
     go
     kubectl
@@ -286,7 +287,7 @@
       xdg-desktop-portal-hyprland
     ];
   };
-
+  environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
   # services.openvpn.servers = {
   #   office.config = '' config '';
   # }
