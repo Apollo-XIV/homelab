@@ -67,7 +67,6 @@
       	outline-style: none;
       }
 
-			/*
       #lock {
           background-image: image(url("/home/acrease/Documents/homelab/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
       }
@@ -91,7 +90,6 @@
       #reboot {
           background-image: image(url("/home/acrease/Documents/homelab/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
       }
-			*/
     '';
 	};
 }
