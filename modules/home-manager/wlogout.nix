@@ -63,7 +63,7 @@
       }
 
       button:focus, button:active, button:hover {
-      	background-color: #194112;
+      	background-color: #111c10;
       	outline-style: none;
       }
 
@@ -84,7 +84,7 @@
       }
 
       #shutdown {
-          background-image: image(url(""), url("/usr/local/share/wlogout/icons/shutdown.png"));
+          background-image: image(url("/home/acrease/Documents/homelab/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
       }
 
       #reboot {
