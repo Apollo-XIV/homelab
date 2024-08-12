@@ -41,7 +41,7 @@
       	background-color: rgba(18, 31, 23, 0.5);
       }
       button {
-        color: #0f2137;
+        color: #e5e5e5;
       	font-size: 16px;
       	background-color: #17171c;
       	border-style: none;
@@ -61,7 +61,7 @@
 
 			/*
       #lock {
-          background-image: image(url(""), url("/usr/local/share/wlogout/icons/lock.png"));
+          background-image: image(url("/home/acrease/Documents/homelab/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
       }
 
       #logout {
