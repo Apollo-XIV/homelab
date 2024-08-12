@@ -171,6 +171,7 @@ in
     enable = true;
     autoEnable = true;
     targets.k9s.enable = true;
+    targets.rofi.enable = true;
   };
 
   # Home Manager can also manage your environment variables through
