@@ -13,7 +13,7 @@
     stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, nur, stlyix, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, ... }@inputs: {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
