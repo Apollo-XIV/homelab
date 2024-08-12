@@ -96,7 +96,7 @@ in
       color_theme = "TTY";
       theme_background = false;
     };
-  }
+  };
 
   programs.ssh = {
     enable = true;
