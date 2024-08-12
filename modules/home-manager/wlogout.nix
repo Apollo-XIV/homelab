@@ -10,20 +10,26 @@
 				text = "lock";
 				circular = true;
 				keybind = "l";
+				height = 1;
+				width = 1;
 			}
-			{
-				label = "logout";
-				action = "sleep 1; hyprctl dispatch exit";
-				text = "logout";
-				circular = true;
-				keybind = "L";
-			}
+			# {
+			# 	label = "logout";
+			# 	action = "sleep 1; hyprctl dispatch exit";
+			# 	text = "logout";
+			# 	circular = true;
+			# 	keybind = "L";
+			# 	height = 1;
+			# 	width = 1;
+			# }
 			{
 				label = "shutdown";
 				action = "systemctl poweroff";
 				text = "shutdown";
 				circular = true;
 				keybind = "s";
+				height = 1;
+				width = 1;
 			}
 			{
 				label = "reboot";
@@ -31,6 +37,8 @@
 				text = "reboot";
 				circular = true;
 				keybind = "r";
+				height = 1;
+				width = 1;
 			}
 		];
     style = ''
