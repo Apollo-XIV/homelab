@@ -39,7 +39,6 @@
           passes = 1;
           vibrancy = 0.1696;
         };
-        "col.shadow" = "rgba(1a1a1aee)";
       };
 
       bind = [
