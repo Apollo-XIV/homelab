@@ -21,12 +21,9 @@ in
     ../../modules/home-manager/zellij.nix
     ../../modules/home-manager/firefox.nix
     ../../modules/home-manager/waybar.nix
-<<<<<<< HEAD
-=======
     ../../modules/home-manager/hyprlock.nix
     ../../modules/home-manager/wlogout.nix
     # ../../modules/stylix.nix
->>>>>>> exp
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
