@@ -26,6 +26,8 @@ jobs:
           tags: tag:ci
       - name: Ping Mishim
         run: |
-          ping 100.86.187.17 && \
-          ping mishim.lorikeet-coelacanth.ts.net
+          ping -c 16 100.86.187.17
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.7.5"
  
