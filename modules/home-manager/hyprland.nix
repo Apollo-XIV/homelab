@@ -14,7 +14,7 @@
         "Unknown-1, disable"
       ];
 
-      exec-once = "hyprpaper & waybar &";
+      exec-once = "hyprpaper & waybar & firefox & spotify";
       
       input = {
         kb_layout = "gb";
@@ -39,7 +39,6 @@
           passes = 1;
           vibrancy = 0.1696;
         };
-        "col.shadow" = "rgba(1a1a1aee)";
       };
 
       bind = [

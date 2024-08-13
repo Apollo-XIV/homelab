@@ -10,23 +10,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
+    stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, nur, ... }@inputs: {
-    # homeConfigurations."acrease" = home-manager.lib.homeManagerConfiguration {
-    #   pkgs = nixpkgs.legacyPackages.x86_64-linux;
-
-        # {wayland.windowManager.hyprland.enable = true;}
-    #   modules = [
-    #     hyprland.homeManagerModules.default
-    #     {wayland.windowManager.hyprland.enable = true;}
-    #     # ...
-    #   ];
-    # };
+  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, ... }@inputs: {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
+          stylix.nixosModules.stylix
           inputs.home-manager.nixosModules.default
           nur.nixosModules.nur
           ({pkgs, ...}: {

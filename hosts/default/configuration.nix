@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./user.nix
+      ../../modules/stylix.nix
     ];
 
   # Bootloader.
@@ -25,6 +26,7 @@
   };
   services.xserver.videoDrivers = [ "nvidia" ];
     
+
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = true;
@@ -191,6 +193,7 @@
     waybar
     networkmanagerapplet
     starship
+    lsix
     hyprpaper
     bat
     eza
@@ -243,23 +246,81 @@
     reaper
     gcc
     libgcc
+    busybox
+    protontricks
     obs-studio
     mpv
     wlogout
     slack
+    docker
     libsForQt5.qt5ct
+    kdePackages.partitionmanager
+    polkit-kde-agent
     exercism
     go
     kubectl
     blender
     k9s
-    helm
+    kubernetes-helm
     gnumeric
+    parsec-bin
+    moonlight-qt
+    sunshine
+    gnome3.adwaita-icon-theme
+    brave
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
+    onlyoffice-bin
   ];
 
-  xdg.portal = {
+
+  services.k3s = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    configPath = /home/acrease/.kube/config;
+    # clusterInit = true;
+    extraFlags = "--write-kubeconfig-mode 0644";
+  };
+
+
+  xdg = {
+    mime.defaultApplications = {
+      "text/html" = "firefox.desktop";
+      "application/pdf" = "firefox.desktop";
+      "image/*" = "gimp.desktop";
+      "x-scheme-handler/http" = "firefox.desktop";
+      "x-scheme-handler/https" = "firefox.desktop";
+      "x-scheme-handler/about" = "firefox.desktop";
+      "x-scheme-handler/unknown" = "firefox.desktop";
+    };
+    portal = {
+      enable = true;
+      config = {
+        common.default = "*";
+      };
+      extraPortals = with pkgs; [ 
+        xdg-desktop-portal-gtk
+        xdg-desktop-portal-hyprland
+      ];
+    };
+  };
+
+  environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
+
+  # services.openvpn.servers = {
+  #   office.config = '' config '';
+  # }
+
+  services.sunshine = {
+    enable = true;
+    openFirewall = true;
+  };
+
+  virtualisation.docker = {
+    enable = true;
+    enableNvidia = true;
+    enableOnBoot = true;
+    autoPrune.enable = true;
+    rootless.enable = true;
   };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -275,8 +336,13 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  # networking.nameservers = [ "192.168.1.205" ];
+  networking.firewall.allowedTCPPorts = [ 9090 ];
+  networking.firewall.allowedUDPPorts = [ 9090 ];
+  # services.resolved = {
+    # enable = true;
+    # fallbackDns = ["192.168.1.205"];
+  # };
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 

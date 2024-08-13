@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, hyprland, ... }:
+{ lib, config, pkgs, inputs, hyprland, ... }:
 
 # let
 #   nur-pkgs = import (builtins.fetchTarball  {
@@ -21,6 +21,12 @@ in
     ../../modules/home-manager/zellij.nix
     ../../modules/home-manager/firefox.nix
     ../../modules/home-manager/waybar.nix
+<<<<<<< HEAD
+=======
+    ../../modules/home-manager/hyprlock.nix
+    ../../modules/home-manager/wlogout.nix
+    # ../../modules/stylix.nix
+>>>>>>> exp
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -85,6 +91,15 @@ in
   programs.ncspot = {
     enable = true;
     settings = {}; # toml config file
+  };
+
+  programs.btop = {
+    enable = true;
+    settings = {
+      color_theme = lib.mkForce "TTY";
+      theme_background = false;
+      vim_keys = true;
+    };
   };
 
   programs.ssh = {
@@ -155,6 +170,21 @@ in
     #   org.gradle.daemon.idletimeout=3600000
     # '';
   };
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "image/*" = "firefox.desktop";
+      "image/png" = "firefox.desktop";
+      "image/jpg" = "firefox.desktop";
+    };
+  };
+
+  stylix = {
+    enable = true;
+    autoEnable = true;
+    targets.k9s.enable = true;
+    targets.rofi.enable = true;
+  };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home
@@ -176,6 +206,7 @@ in
     EDITOR = "hx";
     config = "~/.config/nixos/";
   };
+
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

@@ -17,7 +17,7 @@
       text-width = 80;
     }];
     settings = {
-      theme = "kanagawa";
+      # theme = "kanagawa";
       editor = {
         rulers = [80 120];
         line-number = "relative";
