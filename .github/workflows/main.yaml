@@ -7,7 +7,14 @@ on:
 permissions: write-all
 
 jobs:
-  infra:
-    name: Deploy Terraform
-    uses: ./.github/workflows/infra.yaml
-    secrets: inherit
+  # infra:
+  #   name: Deploy Terraform
+  #   uses: ./.github/workflows/infra.yaml
+  #   secrets: inherit
+  main:
+    name: main
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello world
+        runs: echo "hello"
+ 

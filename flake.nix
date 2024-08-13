@@ -22,7 +22,10 @@
           inputs.home-manager.nixosModules.default
           nur.nixosModules.nur
           ({pkgs, ...}: {
-            nixpkgs.overlays = [nur.overlay];
+            nixpkgs.overlays = [
+              nur.overlay
+              (import ./overlays/programs.nix)
+            ];
             imports = [
               ./hosts/default/configuration.nix
             ];

@@ -14,7 +14,7 @@
         "Unknown-1, disable"
       ];
 
-      exec-once = "hyprpaper & waybar & firefox & spotify";
+      exec-once = "hyprlock & hyprpaper & waybar & firefox & spotify";
       
       input = {
         kb_layout = "gb";

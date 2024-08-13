@@ -142,11 +142,19 @@
   #   };
   # };
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    theme = "breeze-dark";
+  services.displayManager = {
+    autoLogin = {
+      enable = true;
+      user = "acrease";
+    };
+    sddm = {
+      enable = true;
+      wayland.enable = true;
+      theme = "clairvoyance";
+      autoNumlock = true;
+    };
   };
+
   services.xserver.enable = true;
 
   qt = {
@@ -271,6 +279,8 @@
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
     onlyoffice-bin
+    nil
+    yaml-language-server
   ];
 
 
