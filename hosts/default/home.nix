@@ -23,7 +23,7 @@ in
     ../../modules/home-manager/waybar.nix
     ../../modules/home-manager/hyprlock.nix
     ../../modules/home-manager/wlogout.nix
-    # ../../modules/stylix.nix
+    ../../modules/stylix.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -181,12 +181,6 @@ in
     };
   };
 
-  stylix = {
-    enable = true;
-    autoEnable = true;
-    targets.k9s.enable = true;
-    targets.rofi.enable = true;
-  };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home
