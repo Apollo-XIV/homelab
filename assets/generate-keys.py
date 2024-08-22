@@ -4,7 +4,7 @@ import os
 import subprocess
 
 def init_keys():
-    keys = ["bitbucket", "github", "salas"]
+    keys = ["bitbucket", "github", "salas", "mishim"]
     key_dir = os.path.expanduser("~/.ssh")
 
     # Create the directory if it doesn't exist

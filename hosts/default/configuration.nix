@@ -206,6 +206,7 @@
     bat
     eza
     zsh
+    kodi-wayland
     python3
     python311Packages.pip
     python311Packages.python-lsp-server
@@ -343,7 +344,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.nameservers = [ "192.168.1.205" ];

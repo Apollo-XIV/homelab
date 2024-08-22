@@ -117,6 +117,11 @@ in
         user = "acrease";
         identityFile = "/home/acrease/.ssh/salas";
       };
+      "mishim" = {
+        hostname = "192.168.1.234";
+        user = "acrease";
+        identityFile = "/home/acrease/.ssh/salas";
+      };
     };
   };
 

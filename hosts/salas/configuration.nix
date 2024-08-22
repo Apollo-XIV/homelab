@@ -30,14 +30,14 @@
     font-awesome
   ];
 
-  # home-manager = {
-  #   extraSpecialArgs = { inherit inputs; };
-  #   useGlobalPkgs = true;
-  #   useUserPackages = true;
-  #   users = {
-  #     "acrease" = import ./home.nix;
-  #   };
-  # };
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users = {
+      "acrease" = import ./home.nix;
+    };
+  };
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";

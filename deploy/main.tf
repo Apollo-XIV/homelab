@@ -38,10 +38,11 @@ resource "null_resource" "update" {
     user        = "acrease"
   }
   provisioner "remote-exec" {
-    inline = [
-      "git -C ~/config pull",                          // pull the latest config
-      "sudo nixos-rebuild test --flake ~/config#salas" // sudo nixos update
-    ]
+    inline = split("\n", <<-EOF
+      git -C ~/config pull
+      sudo nixos-rebuild test --flake ~/config#salas
+    EOF
+    )
   }
   depends_on = [terraform_data.config_repo]
 }
