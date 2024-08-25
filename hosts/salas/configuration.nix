@@ -35,7 +35,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     users = {
-      "acrease" = import ../default/home.nix;
+      "acrease" = import ./home.nix;
     };
   };
 
