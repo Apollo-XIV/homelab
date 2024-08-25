@@ -54,7 +54,7 @@ in
         echo "Not on main branch, switching to main"
         git -C ~/config checkout main
       fi
-      sudo nixos-rebuild switch --flake ~/config#salas && \
+      sudo nixos-rebuild switch --flake ~/config#salas
     '')
   ];
 
