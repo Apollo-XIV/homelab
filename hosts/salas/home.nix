@@ -15,7 +15,7 @@ in
     ../../modules/home-manager/kitty.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/helix.nix
-    ../../modules/home-manager/zellij.nix
+    # ../../modules/home-manager/zellij.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -54,6 +54,7 @@ in
         echo "Not on main branch, switching to main"
         git -C ~/config checkout main
       fi
+      git -C ~/config pull
       sudo nixos-rebuild switch --flake ~/config#salas
     '')
   ];
