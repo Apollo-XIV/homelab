@@ -44,7 +44,6 @@
       salas = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
-          stylix.nixosModules.stylix
           inputs.home-manager.nixosModules.default
           nur.nixosModules.nur
           ({pkgs, ...}: {
@@ -56,6 +55,10 @@
               ./hosts/salas/configuration.nix
             ];
           })    
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+          }
         ];
       };
       live-iso = nixpkgs.lib.nixosSystem {
