@@ -230,6 +230,7 @@
     yazi
     lynx
     vitetris
+    gh
     transmission
     btop
     cozy
