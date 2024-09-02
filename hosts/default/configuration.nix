@@ -4,7 +4,7 @@
 
 { config, pkgs, inputs, ... }:
 let
-  pkl-cli = inputs.pkl.packages.${pkgs.system}.pkl;
+  pkl = inputs.pkl.packages.${pkgs.system}.pkl;
 in
 {
   imports =
@@ -285,7 +285,7 @@ in
     pkgs.onlyoffice-bin
     pkgs.nil
     pkgs.yaml-language-server
-    pkl-cli
+    pkl
   ];
 
 
