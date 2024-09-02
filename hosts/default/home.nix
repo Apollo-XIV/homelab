@@ -142,6 +142,13 @@ in
     lfs.enable = true;
     userEmail = "alex@crease.sh";
     userName = "acrease";
+    extraConfig = {
+      credentials = {
+        "https://github.com" = {
+          username = "Apollo-XIV";
+        };
+      };
+    };
   };
 
   programs.lazygit = {
