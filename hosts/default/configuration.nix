@@ -284,7 +284,7 @@
     nil
     yaml-language-server
   ] + [
-    pkl
+    pkl.nixosModules.default
   ];
 
 
