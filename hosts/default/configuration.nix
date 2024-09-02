@@ -285,9 +285,9 @@
     onlyoffice-bin
     nil
     yaml-language-server
-  ] + [
+  ] + 
     pkl
-  ];
+  ;
 
 
   services.k3s = {
