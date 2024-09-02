@@ -12,8 +12,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
 
-    pkl = "github:capslock/pkl-flake";
-
+    pkl.url = "github:capslock/pkl-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, pkl, ... }@inputs: {

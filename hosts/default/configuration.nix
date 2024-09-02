@@ -285,7 +285,6 @@
     onlyoffice-bin
     nil
     yaml-language-server
-    pkl
   ];
 
 
