@@ -121,7 +121,7 @@ in
         hostname = "192.168.1.50";
         user = "acrease";
         identityFile = "/home/acrease/.ssh/salas";
-        ciphers = "diffie-hellman-group1-sha1"
+        ciphers = "diffie-hellman-group1-sha1";
       };
       "mishim" = {
         hostname = "192.168.1.234";
