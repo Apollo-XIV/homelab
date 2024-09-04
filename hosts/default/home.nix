@@ -123,6 +123,7 @@ in
         identityFile = "/home/acrease/.ssh/salas";
         extraOptions = {
           KexAlgorithms = "+diffie-hellman-group1-sha1";
+          HostKeyAlgorithms = "+ssh-dss"
         };
       };
       "mishim" = {
