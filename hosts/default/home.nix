@@ -122,7 +122,7 @@ in
         user = "acrease";
         identityFile = "/home/acrease/.ssh/salas";
         extraOptions = {
-          KexAlgorithms = "+diffie-hellman-group1-sha1"
+          KexAlgorithms = "+diffie-hellman-group1-sha1";
         };
       };
       "mishim" = {
