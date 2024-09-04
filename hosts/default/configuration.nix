@@ -187,6 +187,7 @@ in
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
+    niv
     steam
     helix
     git
