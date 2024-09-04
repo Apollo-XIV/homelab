@@ -257,6 +257,7 @@ in
     unzip
     reaper
     gcc
+    nmap
     libgcc
     busybox
     protontricks
