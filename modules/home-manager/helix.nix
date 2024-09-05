@@ -5,17 +5,23 @@
     enable = true;
     defaultEditor = true;
     extraPackages = [];
-    languages.language = [{
-      name = "markdown";
-      soft-wrap = {
-        enable = true;
-        max-wrap = 20;
-        max-indent-retain = 0;
-        wrap-indicator = "";
-        wrap-at-text-width = true;
-      };
-      text-width = 80;
-    }];
+    languages.language = [
+      {
+        name = "markdown";
+        soft-wrap = {
+          enable = true;
+          max-wrap = 20;
+          max-indent-retain = 0;
+          wrap-indicator = "";
+          wrap-at-text-width = true;
+        };
+        text-width = 80;
+      }
+      {
+        name = "hcl";
+        file-types = ["hcl" "tf" "tftpl"];
+      }
+    ];
     settings = {
       # theme = "kanagawa";
       editor = {

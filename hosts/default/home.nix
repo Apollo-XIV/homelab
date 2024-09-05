@@ -99,6 +99,12 @@ in
     };
   };
 
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
+
   programs.ssh = {
     enable = true;
     matchBlocks = {
@@ -142,6 +148,13 @@ in
     lfs.enable = true;
     userEmail = "alex@crease.sh";
     userName = "acrease";
+    extraConfig = {
+      credentials = {
+        "https://github.com" = {
+          username = "Apollo-XIV";
+        };
+      };
+    };
   };
 
   programs.lazygit = {

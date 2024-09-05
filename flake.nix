@@ -11,9 +11,11 @@
     };
     hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
+
+    pkl.url = "github:capslock/pkl-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, pkl, ... }@inputs: {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};

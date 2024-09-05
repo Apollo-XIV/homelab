@@ -3,7 +3,9 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, inputs, ... }:
-
+let
+  pkl = inputs.pkl.packages.${pkgs.system}.pkl;
+in
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -185,6 +187,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
+    niv
     steam
     helix
     git
@@ -230,6 +233,7 @@
     yazi
     lynx
     vitetris
+    gh
     transmission
     btop
     cozy
@@ -254,6 +258,7 @@
     unzip
     reaper
     gcc
+    nmap
     libgcc
     busybox
     protontricks
@@ -281,7 +286,10 @@
     xdg-desktop-portal-gtk
     onlyoffice-bin
     nil
+    ripgrep
     yaml-language-server
+  ] ++ [
+    pkl
   ];
 
 
@@ -341,6 +349,7 @@
   #   enableSSHSupport = true;
   # };
 
+  
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.

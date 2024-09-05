@@ -397,6 +397,21 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1722222840,
+        "narHash": "sha256-VYsWUH+6LhsunkVW5e0MKKmnyE/Sb/H+ZzcNfUPmjlI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "cc6bdf03ef73ccfd5ce7f88679542ce0a5464f8d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
         "lastModified": 1714912032,
         "narHash": "sha256-clkcOIkg8G4xuJh+1onLG4HPMpbtzdLv4rHxFzgsH9c=",
         "owner": "NixOS",
@@ -426,12 +441,31 @@
         "type": "github"
       }
     },
+    "pkl": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1722995588,
+        "narHash": "sha256-0gKC7/Rb9s5t/PxMsMdyWiQevenLCIsvWpTmVi8+Rug=",
+        "owner": "capslock",
+        "repo": "pkl-flake",
+        "rev": "605b4b4e29338171641f657c4e54d14f95bcfc05",
+        "type": "github"
+      },
+      "original": {
+        "owner": "capslock",
+        "repo": "pkl-flake",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "nixpkgs": "nixpkgs_2",
         "nur": "nur",
+        "pkl": "pkl",
         "stylix": "stylix"
       }
     },
@@ -447,7 +481,7 @@
         "flake-compat": "flake-compat",
         "gnome-shell": "gnome-shell",
         "home-manager": "home-manager_2",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       },
       "locked": {
         "lastModified": 1722946882,
