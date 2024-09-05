@@ -286,6 +286,7 @@ in
     xdg-desktop-portal-gtk
     onlyoffice-bin
     nil
+    ripgrep
     yaml-language-server
   ] ++ [
     pkl
