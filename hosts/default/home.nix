@@ -161,7 +161,7 @@ in
 
   programs.bash = {
     enable = true;    
-  }
+  };
 
   programs.lazygit = {
     enable = true;
