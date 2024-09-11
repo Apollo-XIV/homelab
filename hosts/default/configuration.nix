@@ -288,6 +288,7 @@ in
     nil
     ripgrep
     yaml-language-server
+    act
   ] ++ [
     pkl
   ];
