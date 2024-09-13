@@ -269,6 +269,7 @@ in
     docker
     libsForQt5.qt5ct
     kdePackages.partitionmanager
+    kdePackages.dolphin
     polkit-kde-agent
     exercism
     go
