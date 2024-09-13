@@ -289,6 +289,7 @@ in
     ripgrep
     yaml-language-server
     act
+    lampray
   ] ++ [
     pkl
   ];
