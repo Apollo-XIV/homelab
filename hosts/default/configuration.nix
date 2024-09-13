@@ -290,6 +290,7 @@ in
     yaml-language-server
     act
     lampray
+    lampw
   ] ++ [
     pkl
   ];
