@@ -368,11 +368,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1726273710,
-        "narHash": "sha256-r0V7m5gH+ALuD1a0Q228rWT2AKOfPRjKHRQbDwJHoT0=",
+        "lastModified": 1726273899,
+        "narHash": "sha256-Jwdd2AwvIosyEKABiUw+32iZgY81dAkgSJCB0F8ytgY=",
         "owner": "Apollo-XIV",
         "repo": "nix-lampray",
-        "rev": "a2fa08ca06f9010ed0b0111b08fa41112484e1fc",
+        "rev": "15aeb8e982eb5923a7bf5b774eb244f9dbdaafe4",
         "type": "github"
       },
       "original": {
