@@ -21,9 +21,9 @@ in
   programs.zsh.enable = true;
   networking.hostName = "mishim"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  hardware.opengl = {
+  hardware.graphics= {
     enable = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
   services.xserver.videoDrivers = [ "nvidia" ];
     
@@ -164,7 +164,7 @@ in
   # gtk = {
   #   theme = {
   #     name = "Adwaita-dark";
-  #     package = pkgs.gnome.adwaita-gtk-theme;
+  #     package = pkgs4gnome.adwaita-gtk-theme;
   #   };
   # };
 
@@ -232,7 +232,7 @@ in
     lynx
     vitetris
     gh
-    transmission
+    transmission_4
     btop
     cozy
     musikcube
@@ -279,7 +279,7 @@ in
     parsec-bin
     moonlight-qt
     sunshine
-    gnome3.adwaita-icon-theme
+    adwaita-icon-theme
     brave
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
@@ -337,9 +337,10 @@ in
     openFirewall = true;
   };
 
+  hardware.nvidia-container-toolkit.enable = true;
+
   virtualisation.docker = {
     enable = true;
-    enableNvidia = true;
     enableOnBoot = true;
     autoPrune.enable = true;
     rootless.enable = true;
