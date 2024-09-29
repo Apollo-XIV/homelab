@@ -23,7 +23,6 @@ in
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   hardware.opengl = {
     enable = true;
-    driSupport = true;
     driSupport32Bit = true;
   };
   services.xserver.videoDrivers = [ "nvidia" ];
