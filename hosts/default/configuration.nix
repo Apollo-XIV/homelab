@@ -241,7 +241,6 @@ in
     pavucontrol
     pulseaudio
     playerctl
-    transmission
     coreutils
     findutils
     xdg-utils
