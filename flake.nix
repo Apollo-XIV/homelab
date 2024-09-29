@@ -13,9 +13,10 @@
     stylix.url = "github:danth/stylix";
 
     pkl.url = "github:capslock/pkl-flake";
+    lampray.url = "github:Apollo-XIV/nix-lampray";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, pkl, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, pkl, lampray, ... }@inputs: {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
@@ -26,6 +27,7 @@
           ({pkgs, ...}: {
             nixpkgs.overlays = [
               nur.overlay
+              lampray.overlay
               (import ./overlays/programs.nix)
             ];
             imports = [

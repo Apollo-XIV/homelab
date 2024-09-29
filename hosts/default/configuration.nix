@@ -269,6 +269,7 @@ in
     docker
     libsForQt5.qt5ct
     kdePackages.partitionmanager
+    kdePackages.dolphin
     polkit-kde-agent
     exercism
     go
@@ -288,6 +289,12 @@ in
     nil
     ripgrep
     yaml-language-server
+    winetricks
+    ripgrep
+    yaml-language-server
+    act
+    lampray
+    lampw
   ] ++ [
     pkl
   ];

@@ -102,6 +102,7 @@ in
   programs.direnv = {
     enable = true;
     enableZshIntegration = true;
+    enableBashIntegration = true;
     nix-direnv.enable = true;
   };
 
@@ -138,6 +139,7 @@ in
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+    enableBashIntegration = true;
     settings = {
       add_newline = false;
     };
@@ -155,6 +157,10 @@ in
         };
       };
     };
+  };
+
+  programs.bash = {
+    enable = true;    
   };
 
   programs.lazygit = {
