@@ -294,6 +294,7 @@ in
     nodejs
     gleam
     rebar3
+    deno
   ] ++ [
     pkl
   ];
