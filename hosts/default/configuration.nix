@@ -293,6 +293,7 @@ in
     erlang
     nodejs
     gleam
+    rebar3
   ] ++ [
     pkl
   ];
