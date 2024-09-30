@@ -290,6 +290,7 @@ in
     act
     lampray
     lampw
+    erlang
     gleam
   ] ++ [
     pkl
