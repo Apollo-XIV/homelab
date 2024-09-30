@@ -291,6 +291,7 @@ in
     lampray
     lampw
     erlang
+    nodejs
     gleam
   ] ++ [
     pkl
