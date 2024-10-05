@@ -284,6 +284,7 @@ in
     xdg-desktop-portal-gtk
     onlyoffice-bin
     nil
+    figlet
     winetricks
     ripgrep
     yaml-language-server
