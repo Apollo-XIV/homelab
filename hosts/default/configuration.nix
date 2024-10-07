@@ -293,6 +293,7 @@ in
     lampray
     lampw
     erlang
+    superhtml
     nodejs
     gleam
     rebar3
