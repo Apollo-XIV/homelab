@@ -14,6 +14,7 @@
         tailwindcss-language-server = {
           name = "tailwindcss-language-server";
           command = "${pkgs.tailwindcss-language-server}/bin/tailwindcss-language-server";
+          args = ["--stdio"];
         };
       };
       language = [
