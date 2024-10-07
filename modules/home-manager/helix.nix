@@ -47,16 +47,17 @@
             "tailwindcss-language-server"
           ];
         }
-        # {
-        #   name = "tailwindcss";
-        #   scope = "source.css";
-        #   injection-regex = "(postcss|css|html)";
-        #   file-types = ["css" "html"];
-        #   roots = ["tailwind.config.js" "tailwind.config.cjs"];
-        #   language-servers = [
-        #     "tailwindcss-language-server"
-        #   ];
-        # }
+        {
+          name = "tailwindcss";
+          scope = "source.css";
+          injection-regex = "(postcss|css|html)";
+          file-types = ["css" "html"];
+          roots = ["tailwind.config.js" "tailwind.config.cjs"];
+          language-servers = [
+            "tailwindcss-language-server"
+          ];
+          config = {};
+        }
       ];
       };
     settings = {
