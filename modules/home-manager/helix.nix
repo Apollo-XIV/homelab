@@ -27,10 +27,9 @@
         injection-regex = "(postcss|css|html)";
         file-types = ["css" "html"];
         roots = ["tailwind.config.js" "tailwind.config.cjs"];
-        language-servers = [{ 
-          command = "tailwindcss-language-server"; 
-          args = ["-vvv" "--stdio"];
-        }];
+        language-servers = [
+          "tailwindcss-language-server"
+        ];
       }
     ];
     settings = {
