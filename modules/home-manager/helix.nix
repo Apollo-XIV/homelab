@@ -39,6 +39,13 @@
             "tailwindcss-language-server"
           ];
         }
+        {
+          name = "css";
+          language-servers = [
+            "vscode-css-language-server"
+            "tailwindcss-language-server"
+          ];
+        }
         # {
         #   name = "tailwindcss";
         #   scope = "source.css";
