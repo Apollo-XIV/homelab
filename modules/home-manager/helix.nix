@@ -37,7 +37,7 @@
           name = "html";
           language-servers = [
             "vscode-html-language-server"
-            "tailwindcss-language-server"
+            # "tailwindcss-language-server"
           ];
         }
         {
