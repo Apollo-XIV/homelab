@@ -8,6 +8,7 @@
     languages = {
       language-servers = {
         tailwindcss-language-server = {
+          name = "tailwindcss-language-server";
           command = "${pkgs.tailwindcss-language-server}/bin/tailwindcss-language-server";
         };
       };
@@ -34,16 +35,16 @@
             "tailwindcss-language-server"
           ];
         }
-        {
-          name = "tailwindcss";
-          scope = "source.css";
-          injection-regex = "(postcss|css|html)";
-          file-types = ["css" "html"];
-          roots = ["tailwind.config.js" "tailwind.config.cjs"];
-          language-servers = [
-            "tailwindcss-language-server"
-          ];
-        }
+        # {
+        #   name = "tailwindcss";
+        #   scope = "source.css";
+        #   injection-regex = "(postcss|css|html)";
+        #   file-types = ["css" "html"];
+        #   roots = ["tailwind.config.js" "tailwind.config.cjs"];
+        #   language-servers = [
+        #     "tailwindcss-language-server"
+        #   ];
+        # }
       ];
       };
     settings = {
