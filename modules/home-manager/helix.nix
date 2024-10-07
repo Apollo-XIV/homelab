@@ -21,6 +21,18 @@
         name = "hcl";
         file-types = ["hcl" "tf" "tftpl"];
       }
+      {
+        name = "tailwindcss";
+        scope = "source.css";
+        injection-regex = "(postcss|css|html)";
+        file-types = ["css"];
+        roots = ["tailwind.config.js" "tailwind.config.cjs"];
+        language-server = { 
+          command = "tailwindcss-language-server"; 
+          args = ["-vvv" "--stdio"];
+        };
+        config = { };
+      }
     ];
     settings = {
       # theme = "kanagawa";
