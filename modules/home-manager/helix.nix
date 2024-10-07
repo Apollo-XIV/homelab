@@ -31,7 +31,6 @@
           command = "tailwindcss-language-server"; 
           args = ["-vvv" "--stdio"];
         };
-        config = { };
       }
     ];
     settings = {
