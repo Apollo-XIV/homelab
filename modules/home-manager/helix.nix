@@ -35,7 +35,7 @@
         {
           name = "html";
           language-servers = [
-            "superhtml"
+            "vscode-html-language-server"
             "tailwindcss-language-server"
           ];
         }
