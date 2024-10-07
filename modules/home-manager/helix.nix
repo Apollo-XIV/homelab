@@ -28,6 +28,13 @@
           file-types = ["hcl" "tf" "tftpl"];
         }
         {
+          name = "html";
+          language-servers = [
+            "vscode-html-language-server"
+            "tailwindcss-language-server"
+          ];
+        }
+        {
           name = "tailwindcss";
           scope = "source.css";
           injection-regex = "(postcss|css|html)";
