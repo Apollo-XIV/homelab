@@ -7,6 +7,10 @@
     extraPackages = [];
     languages = {
       language-servers = {
+        superhtml = {
+          name = "superhtml";
+          command = "${pkgs.superhtml}/bin/superhtml";
+        };
         tailwindcss-language-server = {
           name = "tailwindcss-language-server";
           command = "${pkgs.tailwindcss-language-server}/bin/tailwindcss-language-server";
