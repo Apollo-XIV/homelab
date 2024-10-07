@@ -288,6 +288,7 @@ in
     winetricks
     ripgrep
     yaml-language-server
+    tailwindcss-language-server
     act
     lampray
     lampw

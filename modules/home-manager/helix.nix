@@ -5,33 +5,40 @@
     enable = true;
     defaultEditor = true;
     extraPackages = [];
-    languages.language = [
-      {
-        name = "markdown";
-        soft-wrap = {
-          enable = true;
-          max-wrap = 20;
-          max-indent-retain = 0;
-          wrap-indicator = "";
-          wrap-at-text-width = true;
+    languages = {
+      language-servers = {
+        tailwindcss-language-server = {
+          command = "${pkgs.tailwindcss-language-server}/bin/tailwindcss-language-server";
         };
-        text-width = 80;
-      }
-      {
-        name = "hcl";
-        file-types = ["hcl" "tf" "tftpl"];
-      }
-      {
-        name = "tailwindcss";
-        scope = "source.css";
-        injection-regex = "(postcss|css|html)";
-        file-types = ["css" "html"];
-        roots = ["tailwind.config.js" "tailwind.config.cjs"];
-        language-servers = [
-          "tailwindcss-language-server"
-        ];
-      }
-    ];
+      };
+      language = [
+        {
+          name = "markdown";
+          soft-wrap = {
+            enable = true;
+            max-wrap = 20;
+            max-indent-retain = 0;
+            wrap-indicator = "";
+            wrap-at-text-width = true;
+          };
+          text-width = 80;
+        }
+        {
+          name = "hcl";
+          file-types = ["hcl" "tf" "tftpl"];
+        }
+        {
+          name = "tailwindcss";
+          scope = "source.css";
+          injection-regex = "(postcss|css|html)";
+          file-types = ["css" "html"];
+          roots = ["tailwind.config.js" "tailwind.config.cjs"];
+          language-servers = [
+            "tailwindcss-language-server"
+          ];
+        }
+      ];
+      };
     settings = {
       # theme = "kanagawa";
       editor = {
@@ -69,5 +76,4 @@
       };
     };
   };
-
 }
