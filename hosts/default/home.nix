@@ -86,8 +86,8 @@ in
 
     (pkgs.writeShellScriptBin "gtp" ''
       echo "Switching to project $1"
-      cd $1
-      zj ac new-tab -l ide
+      zoxide $1
+      zellij ac new-tab -l ide
     '')
   ];
 
