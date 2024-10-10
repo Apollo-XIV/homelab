@@ -287,6 +287,7 @@ in
     figlet
     winetricks
     ripgrep
+    gitbutler
     yaml-language-server
     tailwindcss-language-server
     act

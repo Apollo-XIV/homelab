@@ -85,6 +85,7 @@ in
     '')
 
     (pkgs.writeShellScriptBin "gtp" ''
+      set -e
       echo "Switching to project $1"
       new_dir=$(zoxide query $1)
       cd $new_dir
