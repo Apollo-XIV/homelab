@@ -86,7 +86,8 @@ in
 
     (pkgs.writeShellScriptBin "gtp" ''
       echo "Switching to project $1"
-      zoxide $1
+      new_dir=$(zoxide query $1)
+      cd $new_dir
       zellij ac new-tab -l ide
     '')
   ];
