@@ -83,6 +83,12 @@ in
       git -C ~/Documents/homelab/ push origin main
       git -C ~/Documents/homelab/ checkout exp
     '')
+
+    (pkgs.writeShellScriptBin "gtp" ''
+      echo "Switching to project $1"
+      cd $1
+      zj ac new-tab -l ide
+    '')
   ];
 
   programs.ncspot = {
