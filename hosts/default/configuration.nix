@@ -348,12 +348,17 @@ in
 
   hardware.nvidia-container-toolkit.enable = true;
 
-  virtualisation.docker = {
-    enable = true;
-    enableOnBoot = true;
-    autoPrune.enable = true;
-    rootless.enable = true;
-    enableNvidia = true;
+  virtualisation = {
+    virtualbox = {
+      host.enable = true;
+    };
+    docker = {
+      enable = true;
+      enableOnBoot = true;
+      autoPrune.enable = true;
+      rootless.enable = true;
+      enableNvidia = true;
+    };
   };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
