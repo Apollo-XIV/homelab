@@ -298,6 +298,7 @@ in
     nodejs
     gleam
     rebar3
+    virtualbox
     deno
   ] ++ [
     pkl
