@@ -351,6 +351,7 @@ in
     virtualbox = {
       host.enable = true;
       host.enableKvm = true;
+      host.addNetworkInterface = false;
     };
     docker = {
       enable = true;
