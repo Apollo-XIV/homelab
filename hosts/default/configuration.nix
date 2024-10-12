@@ -350,6 +350,7 @@ in
   virtualisation = {
     virtualbox = {
       host.enable = true;
+      host.enableKvm = true;
     };
     docker = {
       enable = true;
