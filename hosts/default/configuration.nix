@@ -248,7 +248,8 @@ in
     tailscale-systray
     awscli2
     godot_4
-    ollama
+    # ollama
+    ollama-cuda
     oterm
     nextjs-ollama-llm-ui
     vscode
