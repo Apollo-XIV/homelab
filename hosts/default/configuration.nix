@@ -249,6 +249,8 @@ in
     awscli2
     godot_4
     ollama
+    oterm
+    nextjs-ollama-llm-ui
     vscode
     jupyter-all
     vscode-extensions.ms-toolsai.jupyter
