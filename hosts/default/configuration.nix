@@ -219,6 +219,7 @@ in
     terraform-ls
     spotify
     teams-for-linux
+    zed-editor
     vscode-langservers-extracted
     wget
     grim
