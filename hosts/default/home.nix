@@ -83,6 +83,14 @@ in
       git -C ~/Documents/homelab/ push origin main
       git -C ~/Documents/homelab/ checkout exp
     '')
+
+    (pkgs.writeShellScriptBin "gtp" ''
+      set -e
+      echo "Switching to project $1"
+      new_dir=$(zoxide query $1)
+      cd $new_dir
+      zellij ac new-tab -l ide
+    '')
   ];
 
   programs.ncspot = {

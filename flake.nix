@@ -11,12 +11,21 @@
     };
     hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
-
     pkl.url = "github:capslock/pkl-flake";
     lampray.url = "github:Apollo-XIV/nix-lampray";
+    nix-on-droid = {
+      url = "github:nix-community/nix-on-droid/release-24.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, pkl, lampray, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, nur, stylix, pkl, lampray, nix-on-droid, ... }@inputs: {
+    nixOnDroidConfigurations.default = nix-on-droid.lib.nixOnDroidConfiguration{
+      pkgs = import nixpkgs { system = "aarch64-linux"; };
+      modules = [
+        ./hosts/nix-on-droid/config.nix
+      ];
+    };
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};

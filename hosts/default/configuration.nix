@@ -21,10 +21,9 @@ in
   programs.zsh.enable = true;
   networking.hostName = "mishim"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  hardware.opengl = {
+  hardware.graphics= {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
   };
   services.xserver.videoDrivers = [ "nvidia" ];
     
@@ -112,7 +111,6 @@ in
   services.tailscale.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -166,7 +164,7 @@ in
   # gtk = {
   #   theme = {
   #     name = "Adwaita-dark";
-  #     package = pkgs.gnome.adwaita-gtk-theme;
+  #     package = pkgs4gnome.adwaita-gtk-theme;
   #   };
   # };
 
@@ -221,6 +219,7 @@ in
     terraform-ls
     spotify
     teams-for-linux
+    zed-editor
     vscode-langservers-extracted
     wget
     grim
@@ -234,7 +233,7 @@ in
     lynx
     vitetris
     gh
-    transmission
+    transmission_4
     btop
     cozy
     musikcube
@@ -243,7 +242,6 @@ in
     pavucontrol
     pulseaudio
     playerctl
-    transmission
     coreutils
     findutils
     xdg-utils
@@ -251,7 +249,10 @@ in
     tailscale-systray
     awscli2
     godot_4
-    ollama
+    # ollama
+    ollama-cuda
+    oterm
+    nextjs-ollama-llm-ui
     vscode
     jupyter-all
     vscode-extensions.ms-toolsai.jupyter
@@ -281,7 +282,7 @@ in
     parsec-bin
     moonlight-qt
     sunshine
-    gnome3.adwaita-icon-theme
+    adwaita-icon-theme
     brave
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
@@ -295,7 +296,21 @@ in
     act
     lampray
     lampw
-  ] ++ [
+    figlet
+    winetricks
+    ripgrep
+    gitbutler
+    yaml-language-server
+    tailwindcss-language-server
+    act
+    lampray
+    lampw
+    erlang
+    superhtml
+    nodejs
+    gleam
+    rebar3
+    deno
     pkl
   ];
 
@@ -341,12 +356,21 @@ in
     openFirewall = true;
   };
 
-  virtualisation.docker = {
-    enable = true;
-    enableNvidia = true;
-    enableOnBoot = true;
-    autoPrune.enable = true;
-    rootless.enable = true;
+  hardware.nvidia-container-toolkit.enable = true;
+
+  virtualisation = {
+    virtualbox = {
+      host.enable = true;
+      host.enableKvm = true;
+      host.addNetworkInterface = false;
+    };
+    docker = {
+      enable = true;
+      enableOnBoot = true;
+      autoPrune.enable = true;
+      rootless.enable = true;
+      enableNvidia = true;
+    };
   };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

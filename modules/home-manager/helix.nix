@@ -5,23 +5,60 @@
     enable = true;
     defaultEditor = true;
     extraPackages = [];
-    languages.language = [
-      {
-        name = "markdown";
-        soft-wrap = {
-          enable = true;
-          max-wrap = 20;
-          max-indent-retain = 0;
-          wrap-indicator = "";
-          wrap-at-text-width = true;
+    languages = {
+      language-servers = {
+        superhtml = {
+          name = "superhtml";
+          command = "${pkgs.superhtml}/bin/superhtml";
         };
-        text-width = 80;
-      }
-      {
-        name = "hcl";
-        file-types = ["hcl" "tf" "tftpl"];
-      }
-    ];
+        tailwindcss-language-server = {
+          name = "tailwindcss-language-server";
+          command = "${pkgs.tailwindcss-language-server}/bin/tailwindcss-language-server";
+          args = ["--stdio"];
+        };
+      };
+      language = [
+        {
+          name = "markdown";
+          soft-wrap = {
+            enable = true;
+            max-wrap = 20;
+            max-indent-retain = 0;
+            wrap-indicator = "";
+            wrap-at-text-width = true;
+          };
+          text-width = 80;
+        }
+        {
+          name = "hcl";
+          file-types = ["hcl" "tf" "tftpl"];
+        }
+        {
+          name = "html";
+          language-servers = [
+            "vscode-html-language-server"
+            # "tailwindcss-language-server"
+          ];
+        }
+        {
+          name = "css";
+          language-servers = [
+            "vscode-css-language-server"
+            # "tailwindcss-language-server"
+          ];
+        }
+        # {
+        #   name = "tailwindcss";
+        #   scope = "source.css";
+        #   injection-regex = "(postcss|css|html)";
+        #   file-types = ["css" "html"];
+        #   roots = ["tailwind.config.js" "tailwind.config.cjs"];
+        #   language-servers = [
+        #     "tailwindcss-language-server"
+        #   ];
+        # }
+      ];
+      };
     settings = {
       # theme = "kanagawa";
       editor = {
@@ -59,5 +96,4 @@
       };
     };
   };
-
 }
