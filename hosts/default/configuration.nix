@@ -288,11 +288,14 @@ in
     xdg-desktop-portal-gtk
     onlyoffice-bin
     nil
+    ripgrep
+    yaml-language-server
+    winetricks
+    yaml-language-server
+    act
     figlet
     winetricks
-    ripgrep
     gitbutler
-    yaml-language-server
     tailwindcss-language-server
     act
     lampray
@@ -303,7 +306,6 @@ in
     gleam
     rebar3
     deno
-  ] ++ [
     pkl
   ];
 
